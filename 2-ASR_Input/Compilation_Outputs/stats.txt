@@ -1,0 +1,18 @@
+Database Statistics:
+Number of entries in PubMed: 3639
+Number of entries in WoS: 1164
+Number of entries in GreenFile: 200
+Number of entries in Embase: 2261
+Total number of articles compiled from all databases: 7264
+
+Replicate Statistics:
+Total number of articles in compiled database: 7264
+Number of unique articles: 4884
+Number of repeated articles: 2234
+Number of articles with 'No DOI': 146
+
+For aricles with 'No DOI':
+Number of replicates in Title for articles with 'No DOI': 13
+Number of replicates in Abstract for articles with 'No DOI': 13
+Number of replicates in Authors for articles with 'No DOI': 3
+Number of replicates in Journals for articles with 'No DOI': 37

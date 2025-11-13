@@ -1,0 +1,1 @@
+("antimicrobial resistance*" OR "antibiotic resistance*" OR "antimicrobial-resistant" OR "antibiotic-resistant" OR "drug resistance*" OR "multidrug resistance*" OR amr OR "resistance gene*" OR arg OR ARGs OR "resistant bacterium" OR "resistant bacteria" OR resistome*) AND (plastic OR plastics OR microplastic* OR nanoplastic* OR plastisphere)

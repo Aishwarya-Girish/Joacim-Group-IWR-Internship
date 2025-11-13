@@ -1,0 +1,7 @@
+
+Summary of Results:
+
+Total input DOIs: 4884
+Successfully fetched and saved: 4808
+Failed to fetch: 76
+Files saved in folder: 4808
