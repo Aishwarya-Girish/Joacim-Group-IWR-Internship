@@ -1,23 +1,20 @@
 # 🦠 Accelerating Systematic Reviews: An AI-Aided Workflow for Synthesizing the Microplastic-Antimicrobial Resistance Knowledge Landscape
 
-This repository contains the analysis code and results from a study on the cellular mechanisms underlying reproductive fate decisions in the freshwater planarian *Phagocata morgani*.
-
 The project report can be viewed at 🔗[https://aishwarya-girish.github.io/Joacim-Group-IWR-Internship/](https://aishwarya-girish.github.io/Joacim-Group-IWR-Internship/).
 
 ## 🦠 Overview
 
 This repository presents a **quantitative framework** to:
 
-- Infer trajectories using pseudotime
-- Identify bifurcation points along these trajectories
-- Model cell-type abundance and variance changes across transitions
-- Statistically detect cell types enriched near bifurcation points that may drive reproductive fate
-- Model size-independent covariance in the cell types
+- Automate literature retrieval through programmable access to PubMed database
+- Unifying and refining records from multiple sources into a standardized format for AI-assisted screening
+- Automate BibTeX citation files for efficient reference handling
+- Perform preliminary data extraction from title and abstract using LLM
 
 ## 📂 Repository Structure
 ```
 Main Files
-├── 1-Article_Data/                    # Phase 1: Raw Data Acquisition
+├── 1-Article_Data/                   # Phase 1: Raw Data Acquisition
     ├── Data/                          # Outputs from the databases
         ├── embase.csv                 # Manual export from EMBASE
         ├── greenfile.csv              # Manual export from GreenFILE
@@ -44,7 +41,7 @@ Main Files
 ├── 4-Extraction_ChatGPT              # Phase 4: Preliminary Data Extraction
       ├── extraction_chatgpt.py        # Script for LLM-powered metadata extraction from abstracts
 
-Extras                                 # Supplementary Project Assets
+Extras                               # Supplementary Project Assets
 ├── docs                              # Documentation and supplementary materials
 ├── quarto_files                      # Source files for the Quarto project report
 └── README.md                         # Project overview, setup, and usage instructions
