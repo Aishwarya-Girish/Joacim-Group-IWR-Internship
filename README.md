@@ -67,5 +67,5 @@ To reproduce the full analysis:
 
 ## 🦠 Academia Bifurcations: This is not a UMAP, it's a career path 😁
 
-![alt text](https://github.com/Aishwarya-Girish/Dorrity-Lab-EMBL/blob/main/bifurcation.jpeg)
+![alt text](https://github.com/Aishwarya-Girish/quarto_files/images/plastisphere_illustration_dark.png)
 
