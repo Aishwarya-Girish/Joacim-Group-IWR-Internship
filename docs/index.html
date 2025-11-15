@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Microplastic-associated antimicrobial resistance: an AI-aided systematic literature review and distribution mapping – Internship Report</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d01d4806b0c5bc24a8c7d56713dbd9a5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-70d60d9f240d6a386c0d1eb2eb1ec4b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d01d4806b0c5bc24a8c7d56713dbd9a5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="scroll-to-top.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Internship Report</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Report</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./igb.html"> 
+<span class="menu-text">On-Site Visit</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./future_research.html"> 
+<span class="menu-text">Future Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./acknowledgements.html"> 
+<span class="menu-text">Acknowledgements</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#report-overview" id="toc-report-overview" class="nav-link active" data-scroll-target="#report-overview"><span class="header-section-number">1</span> Report Overview</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#background-the-confluence-of-two-global-crises" id="toc-background-the-confluence-of-two-global-crises" class="nav-link" data-scroll-target="#background-the-confluence-of-two-global-crises"><span class="header-section-number">2.1</span> Background: The Confluence of Two Global Crises</a></li>
+  <li><a href="#literature-context-the-plastisphere-as-a-vector-for-antimicrobial-resistance-genes-args" id="toc-literature-context-the-plastisphere-as-a-vector-for-antimicrobial-resistance-genes-args" class="nav-link" data-scroll-target="#literature-context-the-plastisphere-as-a-vector-for-antimicrobial-resistance-genes-args"><span class="header-section-number">2.2</span> Literature Context: The Plastisphere as a Vector for Antimicrobial Resistance Genes (ARGs)</a></li>
+  <li><a href="#research-gap-a-strategic-call-for-global-synthesis-to-unify-the-mp-amr-consensus" id="toc-research-gap-a-strategic-call-for-global-synthesis-to-unify-the-mp-amr-consensus" class="nav-link" data-scroll-target="#research-gap-a-strategic-call-for-global-synthesis-to-unify-the-mp-amr-consensus"><span class="header-section-number">2.3</span> Research Gap: A Strategic Call for Global Synthesis to Unify the MP-AMR Consensus</a></li>
+  <li><a href="#approach-overview-a-systematic-ai-aided-literature-review" id="toc-approach-overview-a-systematic-ai-aided-literature-review" class="nav-link" data-scroll-target="#approach-overview-a-systematic-ai-aided-literature-review"><span class="header-section-number">2.4</span> Approach Overview: A Systematic, AI-Aided Literature Review</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">2.5</span> Objectives</a></li>
+  </ul></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">3</span> Methods</a>
+  <ul class="collapse">
+  <li><a href="#protocol-development" id="toc-protocol-development" class="nav-link" data-scroll-target="#protocol-development"><span class="header-section-number">3.1</span> Protocol Development</a></li>
+  <li><a href="#query-design" id="toc-query-design" class="nav-link" data-scroll-target="#query-design"><span class="header-section-number">3.2</span> Query Design</a></li>
+  <li><a href="#automated-pubmed-data-extraction-pipeline" id="toc-automated-pubmed-data-extraction-pipeline" class="nav-link" data-scroll-target="#automated-pubmed-data-extraction-pipeline"><span class="header-section-number">3.3</span> Automated PubMed Data Extraction Pipeline</a>
+  <ul class="collapse">
+  <li><a href="#library-setup-and-core-architecture" id="toc-library-setup-and-core-architecture" class="nav-link" data-scroll-target="#library-setup-and-core-architecture"><span class="header-section-number">3.3.1</span> Library Setup and Core Architecture</a></li>
+  <li><a href="#data-sanitization-and-preprocessing" id="toc-data-sanitization-and-preprocessing" class="nav-link" data-scroll-target="#data-sanitization-and-preprocessing"><span class="header-section-number">3.3.2</span> Data Sanitization and Preprocessing</a></li>
+  <li><a href="#querying-and-fetching-data-from-pubmed" id="toc-querying-and-fetching-data-from-pubmed" class="nav-link" data-scroll-target="#querying-and-fetching-data-from-pubmed"><span class="header-section-number">3.3.3</span> Querying and Fetching Data from PubMed</a></li>
+  <li><a href="#data-structuring-and-storage" id="toc-data-structuring-and-storage" class="nav-link" data-scroll-target="#data-structuring-and-storage"><span class="header-section-number">3.3.4</span> Data Structuring and Storage</a></li>
+  <li><a href="#integration-and-execution" id="toc-integration-and-execution" class="nav-link" data-scroll-target="#integration-and-execution"><span class="header-section-number">3.3.5</span> Integration and Execution</a></li>
+  </ul></li>
+  <li><a href="#hybrid-data-retrieval-strategy" id="toc-hybrid-data-retrieval-strategy" class="nav-link" data-scroll-target="#hybrid-data-retrieval-strategy"><span class="header-section-number">3.4</span> Hybrid Data Retrieval Strategy</a></li>
+  <li><a href="#standardization-of-data" id="toc-standardization-of-data" class="nav-link" data-scroll-target="#standardization-of-data"><span class="header-section-number">3.5</span> Standardization of Data</a>
+  <ul class="collapse">
+  <li><a href="#metadata-standardization-and-column-alignment" id="toc-metadata-standardization-and-column-alignment" class="nav-link" data-scroll-target="#metadata-standardization-and-column-alignment"><span class="header-section-number">3.5.1</span> Metadata Standardization and Column Alignment</a></li>
+  <li><a href="#text-normalization-for-duplicate-detection" id="toc-text-normalization-for-duplicate-detection" class="nav-link" data-scroll-target="#text-normalization-for-duplicate-detection"><span class="header-section-number">3.5.2</span> Text Normalization for Duplicate Detection</a></li>
+  <li><a href="#identification-of-duplicates-and-statistical-summary" id="toc-identification-of-duplicates-and-statistical-summary" class="nav-link" data-scroll-target="#identification-of-duplicates-and-statistical-summary"><span class="header-section-number">3.5.3</span> Identification of Duplicates and Statistical Summary</a></li>
+  </ul></li>
+  <li><a href="#automated-bibliographic-metadata-retrieval" id="toc-automated-bibliographic-metadata-retrieval" class="nav-link" data-scroll-target="#automated-bibliographic-metadata-retrieval"><span class="header-section-number">3.6</span> Automated Bibliographic Metadata Retrieval</a></li>
+  <li><a href="#asreview-a-scalable-ai-augmented-framework-for-accelerating-systematic-literature-review" id="toc-asreview-a-scalable-ai-augmented-framework-for-accelerating-systematic-literature-review" class="nav-link" data-scroll-target="#asreview-a-scalable-ai-augmented-framework-for-accelerating-systematic-literature-review"><span class="header-section-number">3.7</span> ASReview : A Scalable, AI-Augmented Framework for Accelerating Systematic Literature Review</a>
+  <ul class="collapse">
+  <li><a href="#server-setup-and-sotware-overview" id="toc-server-setup-and-sotware-overview" class="nav-link" data-scroll-target="#server-setup-and-sotware-overview"><span class="header-section-number">3.7.1</span> Server Setup and Sotware Overview</a></li>
+  <li><a href="#methodological-framework" id="toc-methodological-framework" class="nav-link" data-scroll-target="#methodological-framework"><span class="header-section-number">3.7.2</span> Methodological Framework</a></li>
+  <li><a href="#feature-extraction" id="toc-feature-extraction" class="nav-link" data-scroll-target="#feature-extraction"><span class="header-section-number">3.7.3</span> Feature Extraction</a></li>
+  <li><a href="#classification-algorithm" id="toc-classification-algorithm" class="nav-link" data-scroll-target="#classification-algorithm"><span class="header-section-number">3.7.4</span> Classification Algorithm</a></li>
+  <li><a href="#query-strategy" id="toc-query-strategy" class="nav-link" data-scroll-target="#query-strategy"><span class="header-section-number">3.7.5</span> Query Strategy</a></li>
+  <li><a href="#balancing-strategy" id="toc-balancing-strategy" class="nav-link" data-scroll-target="#balancing-strategy"><span class="header-section-number">3.7.6</span> Balancing Strategy</a></li>
+  <li><a href="#stopping-rule" id="toc-stopping-rule" class="nav-link" data-scroll-target="#stopping-rule"><span class="header-section-number">3.7.7</span> Stopping Rule</a></li>
+  <li><a href="#visualizing-the-feature-space" id="toc-visualizing-the-feature-space" class="nav-link" data-scroll-target="#visualizing-the-feature-space"><span class="header-section-number">3.7.8</span> Visualizing the Feature Space</a></li>
+  </ul></li>
+  <li><a href="#preliminary-data-extraction-using-chatgpt" id="toc-preliminary-data-extraction-using-chatgpt" class="nav-link" data-scroll-target="#preliminary-data-extraction-using-chatgpt"><span class="header-section-number">3.8</span> Preliminary Data Extraction using ChatGPT</a>
+  <ul class="collapse">
+  <li><a href="#general-setup" id="toc-general-setup" class="nav-link" data-scroll-target="#general-setup"><span class="header-section-number">3.8.1</span> General Setup</a></li>
+  <li><a href="#explanation-of-iterating-through-rows-and-fetching-data-from-the-chatgpt-api" id="toc-explanation-of-iterating-through-rows-and-fetching-data-from-the-chatgpt-api" class="nav-link" data-scroll-target="#explanation-of-iterating-through-rows-and-fetching-data-from-the-chatgpt-api"><span class="header-section-number">3.8.2</span> Explanation of Iterating Through Rows and Fetching Data from the ChatGPT API</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4</span> Conclusion</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations"><span class="header-section-number">5</span> Limitations</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Microplastic-associated antimicrobial resistance: an AI-aided systematic literature review and distribution mapping</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="report-overview" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Report Overview</h1>
+<p>This internship report presents the methodological foundation and initial progress of an Artificial Intelligence Aided Systematic Literature Review investigating the role of microplastics in the propagation of antimicrobial resistance (AMR). The work detailed in the following sections represents the completed and ongoing efforts to construct a comprehensive and transparent review.</p>
+<p>While the final synthesis and manuscript preparation for the associated peer-reviewed publication are forthcoming, this document offers a complete overview of the established methodology so far, the implemented data processing pipeline, and the preliminary insights that will pave the way for the review’s completion.</p>
+</section>
+<section id="introduction" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Introduction</h1>
+<section id="background-the-confluence-of-two-global-crises" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="background-the-confluence-of-two-global-crises"><span class="header-section-number">2.1</span> Background: The Confluence of Two Global Crises</h2>
+<p>The Anthropocene is characterized by human-driven global changes that are reshaping planetary systems. Among the most pervasive and concerning of these are the dual crises of microplastic pollution <span class="citation" data-cites="hale2020global dimante2024downward stevenson2025rising"><a href="#ref-hale2020global" role="doc-biblioref">[1]</a>, <a href="#ref-dimante2024downward" role="doc-biblioref">[2]</a>, <a href="#ref-stevenson2025rising" role="doc-biblioref">[3]</a></span> and antimicrobial resistance (AMR) <span class="citation" data-cites="magnano2023antimicrobial kariuki2024global naghavi2024global aslam2024amr"><a href="#ref-magnano2023antimicrobial" role="doc-biblioref">[4]</a>, <a href="#ref-kariuki2024global" role="doc-biblioref">[5]</a>, <a href="#ref-naghavi2024global" role="doc-biblioref">[6]</a>, <a href="#ref-aslam2024amr" role="doc-biblioref">[7]</a></span>. Each represents a formidable threat to ecosystem stability and public health, but their intersection creates a novel and synergistic challenge. Understanding the mechanisms by which these two crises converge is of paramount strategic importance for developing effective environmental and health policies for the 21st century.</p>
+<p>Microplastic (MP) pollution has become a defining feature of our time, leading researchers to dub this era the “Plastic age.” MPs are synthetic polymer particles less than 5 mm in diameter, and their exceptional mobility and resistance to degradation have resulted in their near-ubiquitous presence in global ecosystems <span class="citation" data-cites="shamskhany2021evidence"><a href="#ref-shamskhany2021evidence" role="doc-biblioref">[8]</a></span>. From freshwater rivers to deep-sea sediments, these particles act as persistent contaminants. The scale of the problem is staggering; projections estimate that global unmanaged plastic trash could reach 155–265 million metric tons per year in 2060 <span class="citation" data-cites="arias2019collateral kaur2022microplastic yu2022microplastisphere ferheen2024vehicle"><a href="#ref-arias2019collateral" role="doc-biblioref">[9]</a>, <a href="#ref-kaur2022microplastic" role="doc-biblioref">[10]</a>, <a href="#ref-yu2022microplastisphere" role="doc-biblioref">[11]</a>, <a href="#ref-ferheen2024vehicle" role="doc-biblioref">[12]</a></span>. This relentless accumulation of synthetic materials provides a novel and persistent substrate within natural environments, fundamentally altering microbial habitats on a planetary scale <span class="citation" data-cites="yang2019plastics stevenson2024selection"><a href="#ref-yang2019plastics" role="doc-biblioref">[13]</a>, <a href="#ref-stevenson2024selection" role="doc-biblioref">[14]</a></span>. Running parallel to the plastic crisis is the silent pandemic of Antimicrobial Resistance (AMR). Declared a “global public health issue” by the World Health Organization (WHO) and the Centers for Disease Control and Prevention (CDC), AMR threatens to undermine modern medicine <span class="citation" data-cites="tang2023antimicrobial aljeldah2022antimicrobial"><a href="#ref-tang2023antimicrobial" role="doc-biblioref">[15]</a>, <a href="#ref-aljeldah2022antimicrobial" role="doc-biblioref">[16]</a></span>. The overuse and misuse of antimicrobial drugs have accelerated the evolution of resistant microorganisms, rendering once-treatable infections deadly. The current toll is an estimated 700,000 annual deaths, a figure that is projected to escalate dramatically to 10 million by 2050 if left unchecked, surpassing the annual death toll from cancer.</p>
+<p><strong>These two crises converge on the surfaces of microplastics, where microbial communities colonize to form a distinct microecosystem known as the “plastisphere” <span class="citation" data-cites="arias2019collateral yan2024combined tulloch2024microbial zeng2024travertine"><a href="#ref-arias2019collateral" role="doc-biblioref">[9]</a>, <a href="#ref-yan2024combined" role="doc-biblioref">[17]</a>, <a href="#ref-tulloch2024microbial" role="doc-biblioref">[18]</a>, <a href="#ref-zeng2024travertine" role="doc-biblioref">[19]</a></span>.</strong> This biofilm-based habitat creates a unique ecological niche, with environmental conditions and microbial compositions that are markedly different from the surrounding water or natural particles. The plastisphere is not merely a passive carrier of microorganisms; it is a dynamic biological interface that can concentrate, protect, and foster interactions between diverse microbial taxa <span class="citation" data-cites="joannard2024bacterial"><a href="#ref-joannard2024bacterial" role="doc-biblioref">[20]</a></span>.</p>
+<p><strong>This review will explore the critical role of the plastisphere as a potential hotspot for the proliferation and global dissemination of antimicrobial resistance, a nexus of risk that demands urgent scientific inquiry.</strong></p>
+</section>
+<section id="literature-context-the-plastisphere-as-a-vector-for-antimicrobial-resistance-genes-args" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="literature-context-the-plastisphere-as-a-vector-for-antimicrobial-resistance-genes-args"><span class="header-section-number">2.2</span> Literature Context: The Plastisphere as a Vector for Antimicrobial Resistance Genes (ARGs)</h2>
+<p>The plastisphere’s emergence as a novel ecological niche is of strategic importance not only for its role in altering biogeochemical cycles but also for its potential to accelerate the dissemination of antimicrobial resistance. Microplastics function as both incubators and transport vehicles for antibiotic resistance genes (ARGs) in aquatic environments <span class="citation" data-cites="junaid2022wastewater"><a href="#ref-junaid2022wastewater" role="doc-biblioref">[21]</a></span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mp_amr_illustration.svg" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 1.</strong> Microplastic-mediated transfer of antimicrobial resistance genes from plastisphere leading to human exposure.</figcaption>
+</figure>
+</div>
+<p>The primary mechanism by which MPs facilitate the spread of ARGs is through the creation of a high-density microbial habitat. The biofilms that constitute the plastisphere are dense, spatially structured communities where bacteria are in close physical proximity <span class="citation" data-cites="wright2020marine"><a href="#ref-wright2020marine" role="doc-biblioref">[22]</a></span>. <strong>These conditions are ideal for the exchange of genetic material through Horizontal Gene Transfer (HGT), a process that includes mechanisms such as plasmid exchange and transduction <span class="citation" data-cites="rossi2025enrichment"><a href="#ref-rossi2025enrichment" role="doc-biblioref">[23]</a></span>.</strong> This turns each particle of microplastic into a potential hub for genetic exchange. Consequently, MPs function as both a “Petri dish” for the proliferation and selection of ARGs and as a “Vehicle” for their long-distance environmental dissemination <span class="citation" data-cites="jaafarzadeh2024microplastics yu2022microplastisphere joannard2024bacterial tulloch2024microbial junaid2022wastewater"><a href="#ref-yu2022microplastisphere" role="doc-biblioref">[11]</a>, <a href="#ref-tulloch2024microbial" role="doc-biblioref">[18]</a>, <a href="#ref-joannard2024bacterial" role="doc-biblioref">[20]</a>, <a href="#ref-junaid2022wastewater" role="doc-biblioref">[21]</a>, <a href="#ref-jaafarzadeh2024microplastics" role="doc-biblioref">[24]</a></span>. Research employs advanced techniques like metagenomic sequencing, FTIR, and Scanning Electron Microscopy (SEM) to characterize microbial communities, ARGs, and the physical properties of MPs <span class="citation" data-cites="bartkova2021techniques luo2023determining"><a href="#ref-bartkova2021techniques" role="doc-biblioref">[25]</a>, <a href="#ref-luo2023determining" role="doc-biblioref">[26]</a></span>.</p>
+<p>Mounting evidence demonstrates a significant enrichment of ARGs within the plastisphere compared to surrounding environments. Studies conducted in diverse aquatic ecosystems, including the North Pacific and the Huangpu River, have found that MPs harbor a higher abundance of ARGs than adjacent water columns or natural particles <span class="citation" data-cites="fu2024antibiotic golwala2024microplastics van2021open"><a href="#ref-fu2024antibiotic" role="doc-biblioref">[27]</a>, <a href="#ref-golwala2024microplastics" role="doc-biblioref">[28]</a>, <a href="#ref-van2021open" role="doc-biblioref">[29]</a></span>. The type of plastic polymer also appears to play a critical role in shaping the microbial community and its associated resistome <span class="citation" data-cites="lear2021plastics"><a href="#ref-lear2021plastics" role="doc-biblioref">[30]</a></span>. Research indicates that different plastic types, such as biodegradable polylactic acid (PLA) and non-degradable polyethylene (PE), can selectively enrich distinct microbial communities and ARG profiles. Counterintuitively, some studies suggest that biodegradable MPs may pose a higher ARG risk, possibly because the degradation byproducts can serve as a carbon source, stimulating microbial growth and subsequent gene transfer <span class="citation" data-cites="zhu2025understanding joannard2024bacterial stevenson2024selection tang2024aged"><a href="#ref-stevenson2024selection" role="doc-biblioref">[14]</a>, <a href="#ref-joannard2024bacterial" role="doc-biblioref">[20]</a>, <a href="#ref-zhu2025understanding" role="doc-biblioref">[31]</a>, <a href="#ref-tang2024aged" role="doc-biblioref">[32]</a></span>.</p>
+<p>Wastewater systems are a critical focal point in this process. Wastewater treatment plants (WWTPs) are not only key conduits for the release of MPs into the environment but are also recognized hotspots for antibiotic-resistant bacteria (ARBs) and ARGs <span class="citation" data-cites="raju2025interplay"><a href="#ref-raju2025interplay" role="doc-biblioref">[33]</a></span>. Although modern WWTPs can achieve a high removal efficiency for MPs (often exceeding 90%), they are not completely effective. The MPs that are discharged in treated effluent can carry a significant load of wastewater-associated pathogens and ARGs, effectively seeding natural ecosystems with a resilient, mobile source of antimicrobial resistance <span class="citation" data-cites="golwala2024microplastics junaid2022wastewater tulloch2024microbial yan2024combined"><a href="#ref-yan2024combined" role="doc-biblioref">[17]</a>, <a href="#ref-tulloch2024microbial" role="doc-biblioref">[18]</a>, <a href="#ref-junaid2022wastewater" role="doc-biblioref">[21]</a>, <a href="#ref-golwala2024microplastics" role="doc-biblioref">[28]</a></span>.</p>
+</section>
+<section id="research-gap-a-strategic-call-for-global-synthesis-to-unify-the-mp-amr-consensus" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="research-gap-a-strategic-call-for-global-synthesis-to-unify-the-mp-amr-consensus"><span class="header-section-number">2.3</span> Research Gap: A Strategic Call for Global Synthesis to Unify the MP-AMR Consensus</h2>
+<p>To effectively assess and mitigate the public health risks posed by the MP-AMR intersection, a coherent, large-scale understanding of the underlying ecological dynamics is essential. However, the current body of research is characterized by a fragmentation of findings and a lack of synthesis, creating a strategic urgency to consolidate this knowledge into a unified framework.</p>
+<p>The central research gap is the absence of a comprehensive, evidence-based consensus on the specific role of microplastics in ARG dissemination. Existing studies, while valuable, often lack unified conclusions, particularly regarding the critical question of whether different MP types selectively promote the enrichment of specific ARGs <span class="citation" data-cites="junaid2022wastewater"><a href="#ref-junaid2022wastewater" role="doc-biblioref">[21]</a></span>. <strong>The limited scope of individual investigations, which are typically confined to specific geographic locations, plastic types, or environmental conditions, prevents a broader exploration of the complex ecological relationships that govern the plastisphere resistome across diverse spatiotemporal scales. A holistic understanding remains elusive.</strong></p>
+<p>This challenge is compounded by the <strong>sheer volume and rapid expansion of the relevant scientific literature</strong>. Thousands of articles have been published on factors related to environmental pollution and microbial resistance, yet a clear overview of all preceding factors and interaction between factors is missing.</p>
+<p>Consequently, the manual screening of titles and abstracts has become a major bottleneck for researchers <span class="citation" data-cites="van2021open"><a href="#ref-van2021open" role="doc-biblioref">[29]</a></span>. The scale of the data is simply too vast for traditional review methodologies to handle effectively, leaving the field without a comprehensive map of the evidence.</p>
+<p>To bridge this critical knowledge gap, a methodological solution is required that is both systematic in its approach and powerful enough to manage the immense scale of available data. This new strategy must move beyond isolated findings to build a structured, evidence-based understanding of the intertwined threats of microplastic pollution and antimicrobial resistance.</p>
+</section>
+<section id="approach-overview-a-systematic-ai-aided-literature-review" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="approach-overview-a-systematic-ai-aided-literature-review"><span class="header-section-number">2.4</span> Approach Overview: A Systematic, AI-Aided Literature Review</h2>
+<p>To address the fragmented nature of the research landscape and overcome the bottleneck of manual screening, this study proposes a novel, AI-aided systematic literature review. This methodology is strategically designed to move beyond the analysis of individual findings and create a comprehensive, evidence-based map of the field, transforming disparate data points into a structured body of knowledge.</p>
+<p>A systematic review is the foundational component of this approach. This methodology is essential for synthesizing evidence from a large and varied body of scientific work <span class="citation" data-cites="okoli2015guide nightingale2009guide"><a href="#ref-okoli2015guide" role="doc-biblioref">[34]</a>, <a href="#ref-nightingale2009guide" role="doc-biblioref">[35]</a></span>. By systematically identifying, appraising, and synthesizing all relevant research on a specific topic, it allows for the creation of an “overview and strength of evidence” that is currently absent in the study of the plastisphere resistome. It provides a rigorous, reproducible framework for understanding the current state of knowledge and identifying areas for future research.</p>
+<p>The integration of advanced Artificial Intelligence (AI) methodologies into the conduct of Systematic Reviews (SRs) is fundamentally driven by the need to manage the exponential growth in published literature and mitigate the inherent burdens associated with manual assessment, which often renders the process laborious, error-prone, and time-consuming and nearly impossible. To overcome this, an AI-powered active learning will be employed. This machine learning approach dramatically increases the efficiency of the screening process, with simulation studies showing it can “save up to 95% of screening time” <span class="citation" data-cites="van2021open"><a href="#ref-van2021open" role="doc-biblioref">[29]</a></span>. The AI model in the software ASReview, operates in a “researcher-in-the-loop” process, where it learns from human decisions to continuously prioritize the most relevant records for review. This allows the research team to focus their expertise where it is most needed, ensuring both efficiency and accuracy <span class="citation" data-cites="van2021open de5136987asreview"><a href="#ref-van2021open" role="doc-biblioref">[29]</a>, <a href="#ref-de5136987asreview" role="doc-biblioref">[36]</a></span>.</p>
+<p><strong>The proposed AI-aided workflow will involve a multi-phase screening process designed for both speed and precision. An initial screening phase will use a efficient model with sementic understanding to screen through the titles and abstracts and arrive at a consenses. This ensures that only few, if any, relevant papers are missed. A second phase will employ a more complex method of refining the selection of relevant articles and performing a full-text extraction, thus ensuring a high-quality final dataset.</strong></p>
+<p>The integration of systematic review rigor with artificial intelligence will enable this study to comprehensively map the research landscape. This powerful, evidence-based methodology will achieve specific, high-impact objectives that provide immediate and foundational value to the scientific and policy-making communities.</p>
+</section>
+<section id="objectives" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="objectives"><span class="header-section-number">2.5</span> Objectives</h2>
+<p><strong>This research is guided by a dual set of objectives designed not only to answer a critical scientific question but also to create a lasting and valuable resource for the global research community.</strong></p>
+<p><strong>Primary Objective:</strong> To synthesize the available evidence regarding the microplastic-AMR nexus through a comprehensive, AI-aided systematic review. This synthesis will specifically identify and quantify how a wide range of ecological and physico-chemical factors, including but not limited to plastic polymer type, environmental setting (e.g., freshwater, marine, wastewater effluent), and microbial community composition, influence the enrichment and spread of ARGs.</p>
+<p><strong>The secondary objective:</strong> To create a rich, queryable, and publicly available database of the screened literature. This database, containing hundereds of relevant articles identified through the AI-aided screening process, will “serve as a basis for international researchers” to conduct further, more specific meta-analyses and targeted investigations. This resource will function as a “living review,” designed to be updated over time as new research is published, thereby providing a dynamic and continuously evolving foundation for the field.</p>
+<p><strong>This review is conducted as a key activity within the scope of the <a href="https://tulip-project.eu/">EU-funded Project TULIP</a> (Community-based engagement and intervenTions to stem the tide of antimicrobial resistance spread in the aqUatic environments catalysed by cLImate change and Plastic pollution interactions). TULIP represents a crucial international effort to address the triple threat of microplastic pollution, antimicrobial resistance (AMR), and climate change in aquatic environments.</strong></p>
+</section>
+</section>
+<section id="methods" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Methods</h1>
+<section id="protocol-development" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="protocol-development"><span class="header-section-number">3.1</span> Protocol Development</h2>
+<p>This study was preregistered on the Open Science Framework (OSF) prior to data collection and analysis. The registration was completed on 18th February 2025 and outlines the primary research questions, methodological approach, and analytical strategy.</p>
+<p>The preregistration specified the following key elements:</p>
+<ul>
+<li>Search Strategy</li>
+<li>Screening Procedure</li>
+<li>Data Extraction and Synthesis</li>
+<li>Research Objectives</li>
+</ul>
+<p>This was done so that any deviations from the original registration could be noted in the respective methodology and results sections of the review. This implies that exploratory analyses conducted beyond the registered plan could be clearly identified to maintain transparency between confirmatory and exploratory findings.</p>
+<p>The complete registration document, including the original timestamped research plan, is publicly available at <a href="https://osf.io/23wnh/overview">https://osf.io/23wnh/overview</a>, ensuring the reproducibility and verification of our research process.</p>
+</section>
+<section id="query-design" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="query-design"><span class="header-section-number">3.2</span> Query Design</h2>
+<p>The search strategy was systematically developed and validated to ensure high sensitivity in capturing the literature at the intersection of plastic pollution and antimicrobial resistance.</p>
+<p><strong>Bibliographic Databases and Search String:</strong> Comprehensive electronic searches were performed across four major bibliographic databases: PubMed, Embase, Web of Science, and GreenFile. The search strategy employed a Boolean query designed to capture two core concepts:</p>
+<p><strong>Antimicrobial Resistance (AMR):</strong> Terms included “antimicrobial resistance<em>”, ”antibiotic resistance</em>”, “drug resistance<em>”, AMR, ”resistance gene</em>”, and “resistome*“.</p>
+<p><strong>Plastic Pollution:</strong> Terms included plastic, plastics, microplastic<em>, nanoplastic</em>, and plastisphere.</p>
+<p>The final query used was:</p>
+<pre><code>("antimicrobial resistance*" OR "antibiotic resistance*" OR "antimicrobial-resistant" OR "antibiotic-resistant" OR "drug resistance*" OR "multidrug resistance*" OR amr OR "resistance gene*" OR arg OR ARGs OR "resistant bacterium" OR "resistant bacteria" OR resistome*)
+AND
+(plastic OR plastics OR microplastic* OR nanoplastic* OR plastisphere)</code></pre>
+<p>The search was limited to peer-reviewed articles published in English between 1 January 2015 and 10 February 2025.</p>
+<p><strong>Search Validation Procedure:</strong></p>
+<p>To ensure the robustness and comprehensiveness of the search strategy, a formal validation was conducted using a set of benchmark articles. <a href="https://osf.io/23wnh/overview">Sixteen key publications</a> were pre-identified as representative of the diverse study types and themes within the field (e.g., laboratory studies, field observations, and reviews). Multiple iterations of the search syntax were tested against these articles. The final query was selected because it successfully retrieved all 16 validation articles, confirming its ability to capture a wide spectrum of relevant literature. This process validates that the search strategy possesses the necessary sensitivity to serve as a reliable foundation for the systematic mapping.</p>
+</section>
+<section id="automated-pubmed-data-extraction-pipeline" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="automated-pubmed-data-extraction-pipeline"><span class="header-section-number">3.3</span> Automated PubMed Data Extraction Pipeline</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pubmed_pipeline_diagram.svg" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 2.</strong> Automated PubMed data extraction pipeline.</figcaption>
+</figure>
+</div>
+<p>A central component of this project was the development of a Python-based data extraction pipeline that automates the retrieval, parsing, and organization of literature from the <strong>PubMed</strong> database. The overarching aim of this system is to establish a foundation for <strong>AI-aided literature review</strong>, allowing for large-scale, reproducible aggregation of scientific articles.</p>
+<p>By automating the collection of metadata such as titles, abstracts, authorship, and publication details, the system enables downstream analysis of the retreived data. This not only accelerates information gathering but also ensures methodological transparency, as every step (from querying to parsing) is reproducible.</p>
+<section id="library-setup-and-core-architecture" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="library-setup-and-core-architecture"><span class="header-section-number">3.3.1</span> Library Setup and Core Architecture</h3>
+<p>The implementation makes use of the <code>requests</code>, <code>lxml</code>, and <code>BeautifulSoup</code> <span class="citation" data-cites="richardson2007beautiful uzun2018comparison"><a href="#ref-richardson2007beautiful" role="doc-biblioref">[37]</a>, <a href="#ref-uzun2018comparison" role="doc-biblioref">[38]</a></span> libraries to interact with the PubMed Application programming interface (API) and process its XML-based responses. The E-utilities are the public API to the NCBI Entrez system and allow access to all Entrez databases including PubMed, PMC, Gene, Nuccore and Protein. The <strong>NCBI E-utilities</strong> endpoint serves as the interface for fetching article metadata <span class="citation" data-cites="sayers2010general kans2024entrez"><a href="#ref-sayers2010general" role="doc-biblioref">[39]</a>, <a href="#ref-kans2024entrez" role="doc-biblioref">[40]</a></span>. Each component of the pipeline plays a distinct role: <code>requests</code> manages HTTP communication, <code>lxml</code> performs efficient XML tree parsing, and <code>BeautifulSoup</code> ensures robust cleaning of textual data embedded in HTML or XML tags.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lxml <span class="im">import</span> etree</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv, os</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>base_url <span class="op">=</span> <span class="st">"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Here, the variable base_url defines the central API endpoint from which two specific utilities <code>esearch.fcgi</code> and <code>efetch.fcgi</code> are subsequently called. These utilities respectively perform article identification and detailed metadata retrieval <span class="citation" data-cites="sayers2009utilities"><a href="#ref-sayers2009utilities" role="doc-biblioref">[41]</a></span>.</p>
+</section>
+<section id="data-sanitization-and-preprocessing" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="data-sanitization-and-preprocessing"><span class="header-section-number">3.3.2</span> Data Sanitization and Preprocessing</h3>
+<p>Data fetched from PubMed often contain embedded markup elements, which complicate downstream text processing. To address this, a dedicated cleaning function was implemented using the BeautifulSoup HTML parser. This function ensures that the text is free of structural tags and extraneous characters, producing plain text suitable for machine learning models and vector-based text representations.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> clean_html(raw_html):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    soup <span class="op">=</span> BeautifulSoup(raw_html, <span class="st">"html.parser"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> soup.get_text()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This step is critical for maintaining the linguistic integrity of the abstracts and titles while preventing formatting artifacts from interfering with tokenization or semantic embedding stages in later analysis. It also ensures that multilingual and symbol-rich abstracts are handled consistently.</p>
+</section>
+<section id="querying-and-fetching-data-from-pubmed" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="querying-and-fetching-data-from-pubmed"><span class="header-section-number">3.3.3</span> Querying and Fetching Data from PubMed</h3>
+<p>The heart of the retrieval system lies in the fetch_all_pubmed_data() function, which governs the two-stage data acquisition process. In the first stage, the function submits an E-Search request to identify all publication identifiers (PMIDs) associated with the user’s query, optionally constrained by a publication date range.</p>
+<p>The function then performs iterative requests in batches, ensuring scalability and compliance with PubMed’s API rate limits. In the second stage, the E-Fetch utility is invoked to retrieve detailed article metadata corresponding to each batch of PMIDs.</p>
+<p>The XML response is parsed using lxml, allowing structured extraction of key bibliographic fields. The fields extracted were:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pubmed_table.svg" class="img-fluid figure-img"></p>
+<figcaption><strong>Table 1.</strong> Relevant data fields extracted from PubMed.</figcaption>
+</figure>
+</div>
+<p>During extraction, HTML/XML artifacts embedded in titles and abstracts were removed to ensure consistency in textual data. The resulting output is stored as a structured list of dictionaries and subsequently converted into a dataframe for downstream analysis. This approach ensures high fidelity retrieval while allowing flexible modification of query scope and record fields.</p>
+<p>The implementation deliberately employs batch processing (with a default of 200 records per request) to efficiently handle large datasets while avoiding excessive memory usage. Furthermore, optional date filtering provides temporal control over the dataset, facilitating focused meta-analyses over defined publication windows.</p>
+<p>The full implementation used in this study is available at: <a href="https://github.com/Aishwarya-Girish/Joacim-Group-IWR-Internship/blob/main/1-Article_Data/pubmed.py">https://github.com/Aishwarya-Girish/Joacim-Group-IWR-Internship/blob/main/1-Article_Data/pubmed.py</a></p>
+<p>Example Usage and Illustrative Simplified Code:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lxml <span class="im">import</span> etree</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_all_pubmed_data(query, start_date<span class="op">=</span><span class="va">None</span>, end_date<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Simplified illustrative version:</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">    Fetches PMIDs based on a query and retrieves core article metadata.</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    base_url <span class="op">=</span> <span class="st">"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Optional date filter</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> start_date <span class="kw">and</span> end_date:</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        query <span class="op">+=</span> <span class="ss">f' AND (</span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">[PDAT] : </span><span class="sc">{</span>end_date<span class="sc">}</span><span class="ss">[PDAT])'</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- Step 1: Retrieve PMIDs ---</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    pmid_response <span class="op">=</span> requests.get(</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        base_url <span class="op">+</span> <span class="st">"esearch.fcgi"</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>        params<span class="op">=</span>{</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>            <span class="st">"db"</span>: <span class="st">"pubmed"</span>,</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>            <span class="st">"term"</span>: query,</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>            <span class="st">"retmax"</span>: <span class="dv">200000</span>,</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>            <span class="st">"retmode"</span>: <span class="st">"xml"</span>,</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>            <span class="st">"sort"</span>: <span class="st">"relevance"</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    pmid_tree <span class="op">=</span> etree.fromstring(pmid_response.content)</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    pmids <span class="op">=</span> [elem.text <span class="cf">for</span> elem <span class="kw">in</span> pmid_tree.findall(<span class="st">".//Id"</span>)]</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> []</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- Step 2: Retrieve details for PMIDs in batches ---</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(pmids), <span class="dv">200</span>):</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>        batch <span class="op">=</span> pmids[i:i<span class="op">+</span><span class="dv">200</span>]</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>        detail_response <span class="op">=</span> requests.get(</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>            base_url <span class="op">+</span> <span class="st">"efetch.fcgi"</span>,</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>            params<span class="op">=</span>{<span class="st">"db"</span>: <span class="st">"pubmed"</span>, <span class="st">"id"</span>: <span class="st">","</span>.join(batch), <span class="st">"retmode"</span>: <span class="st">"xml"</span>}</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>        detail_tree <span class="op">=</span> etree.fromstring(detail_response.content)</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> article <span class="kw">in</span> detail_tree.findall(<span class="st">".//PubmedArticle"</span>):</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>            title <span class="op">=</span> article.findtext(<span class="st">".//ArticleTitle"</span>, default<span class="op">=</span><span class="st">"No title available"</span>)</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>            abstract <span class="op">=</span> article.findtext(<span class="st">".//AbstractText"</span>, default<span class="op">=</span><span class="st">"No abstract available"</span>)</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>            year <span class="op">=</span> article.findtext(<span class="st">".//PubDate/Year"</span>, default<span class="op">=</span><span class="st">"Unknown year"</span>)</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>            results.append({</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>                <span class="st">"PMID"</span>: article.findtext(<span class="st">".//PMID"</span>, default<span class="op">=</span><span class="st">""</span>),</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Title"</span>: title.strip(),</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Abstract"</span>: abstract.strip(),</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Year"</span>: year</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>            })</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="co"># Example call</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>papers <span class="op">=</span> fetch_all_pubmed_data(<span class="st">"single-cell RNA sequencing"</span>, start_date<span class="op">=</span><span class="st">"2015"</span>, end_date<span class="op">=</span><span class="st">"2024"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="data-structuring-and-storage" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="data-structuring-and-storage"><span class="header-section-number">3.3.4</span> Data Structuring and Storage</h3>
+<p>Once the data retrieval is complete, the results are serialized and exported into a structured CSV format. The function below ensures that the output directory is automatically created if absent and that the dataset is encoded in UTF-8 to preserve non-ASCII characters in author names or abstracts.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> save_to_csv(data, filename<span class="op">=</span><span class="st">"pubmed.csv"</span>):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> os.path.exists(<span class="st">"Data"</span>):</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        os.makedirs(<span class="st">"Data"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(os.path.join(<span class="st">"Data"</span>, filename), <span class="st">"w"</span>, encoding<span class="op">=</span><span class="st">"utf-8-sig"</span>, newline<span class="op">=</span><span class="st">""</span>) <span class="im">as</span> f:</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        writer <span class="op">=</span> csv.DictWriter(f, fieldnames<span class="op">=</span>data[<span class="dv">0</span>].keys())</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        writer.writeheader()</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        writer.writerows(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This step transforms the raw API output into a machine-readable corpus suitable for AI-driven literature analysis, such as embedding-based similarity searches, topic modeling, and trend visualization. Each record corresponds to a distinct publication, with fields standardized across all entries.</p>
+</section>
+<section id="integration-and-execution" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="integration-and-execution"><span class="header-section-number">3.3.5</span> Integration and Execution</h3>
+<p>The complete system is integrated through a main function that reads user-defined queries from a text file and executes the retrieval and storage workflow.</p>
+<p>This modular design ensures reproducibility and adaptability. The system can be operated as a standalone command-line tool or integrated as a backend service within larger text-mining workflows. The resulting dataset can subsequently be fed into AI-assisted frameworks.</p>
+</section>
+</section>
+<section id="hybrid-data-retrieval-strategy" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="hybrid-data-retrieval-strategy"><span class="header-section-number">3.4</span> Hybrid Data Retrieval Strategy</h2>
+<p>In order to complement the automated PubMed pipeline, additional searches were conducted across <strong>EMBASE</strong>, <strong>GreenFILE</strong>, and <strong>Web of Science (WoS)</strong> to achieve a broader literature coverage. The <code>query</code> used was the same as was previously used for PubMed.</p>
+<p>Unlike PubMed, these databases have <strong>restricted access to their APIs</strong>. EMBASE and Web of Science, in particular, require logins, institutional subscriptions or university credentials to access their APIs, advanced search features and bulk export functionalities, while GreenFILE similarly limits automated access. Consequently, it was necessary to perform <strong>manual data extraction</strong> through the web interfaces of each database.</p>
+<p>For the databases Web of Science, EMBASE and GreenFILE, <strong>all available metadata fields</strong> along with the <strong>abstract</strong> were exported directly from the database interface. This ensured that no potentially relevant semantic or contextual information was lost prior to downstream computational analysis, which is particularly important for AI-driven literature synthesis that benefits from the full depth of structured metadata.</p>
+<p>By exporting the <strong>entire metadata schema</strong> from each database, the resulting dataset remained maximally flexible and analytically complete. This approach avoids the methodological bias that can arise from selective field extraction.</p>
+<p><strong>This manual extraction process, while complete in terms of metadata retention, highlighted the practical limitations of restricted bibliographic databases when compared to the PubMed automated pipeline. Unlike PubMed, where programmatic retrieval was efficient, reproducible, and less susceptible to human transcription or export errors, the workflows for EMBASE, GreenFILE, and Web of Science required repeated manual operations. This introduced additional time burdens and increased the potential for inconsistencies in formatting and data organization across exports. As a result, the contrast between the two approaches underscored the value of automated retrieval methods in terms of speed, error reduction, and standardization — demonstrating that, where possible, </strong>API-driven pipelines provide a more robust and scalable foundation for downstream computational analysis.**</p>
+</section>
+<section id="standardization-of-data" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="standardization-of-data"><span class="header-section-number">3.5</span> Standardization of Data</h2>
+<p>To facilitate the <strong>standardization of heterogeneous datasets</strong> from diverse platforms, a structured, machine-readable corpus suitable for the AI-aided literature review was created. By integrating these manually curated datasets with the automated PubMed collection, the framework supports large-scale text mining, cross-database analyses, and knowledge synthesis in a reproducible and systematic manner.</p>
+<section id="metadata-standardization-and-column-alignment" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="metadata-standardization-and-column-alignment"><span class="header-section-number">3.5.1</span> Metadata Standardization and Column Alignment</h3>
+<p>Because each database uses distinct terminology and variable naming conventions, key metadata fields (Title, Abstract, Authors, DOI, Journal) were standardized to a shared schema.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pubmed_df_new <span class="op">=</span> pubmed_df[[<span class="st">'Title'</span>, <span class="st">'Abstract'</span>, <span class="st">'Authors'</span>, <span class="st">'DOI'</span>, <span class="st">'Journal'</span>]]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>wos_df_new <span class="op">=</span> wos_df[[<span class="st">'Article Title'</span>, <span class="st">'Abstract'</span>, <span class="st">'Authors'</span>, <span class="st">'DOI'</span>, <span class="st">'Source Title'</span>]].rename(</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    columns<span class="op">=</span>{<span class="st">'Article Title'</span>: <span class="st">'Title'</span>, <span class="st">'Source Title'</span>: <span class="st">'Journal'</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This harmonization step allowed all datasets to be concatenated into a unified dataframe (compiled_df) suitable for cross-database comparison.</p>
+</section>
+<section id="text-normalization-for-duplicate-detection" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="text-normalization-for-duplicate-detection"><span class="header-section-number">3.5.2</span> Text Normalization for Duplicate Detection</h3>
+<p>Some records lacked DOIs, which made conventional duplicate detection insufficient. To enable robust identification of duplication based on article content, text fields were normalized by removing punctuation and enforcing consistent case formatting:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> normalize_text(text):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">''</span>.join([char.lower() <span class="cf">for</span> char <span class="kw">in</span> text <span class="cf">if</span> char <span class="kw">not</span> <span class="kw">in</span> string.punctuation])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This normalization was applied to titles, abstracts, authors, and journal names to allow structural comparison even where metadata formatting differed.</p>
+</section>
+<section id="identification-of-duplicates-and-statistical-summary" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="identification-of-duplicates-and-statistical-summary"><span class="header-section-number">3.5.3</span> Identification of Duplicates and Statistical Summary</h3>
+<p>Duplicates were first detected using DOIs, where available, since DOI values are globally unique identifiers. For records without DOIs, duplicates were inferred based on normalized textual similarity across key descriptive fields:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>replicate_counts <span class="op">=</span> df[<span class="st">'DOI'</span>].value_counts()</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df_no_doi[<span class="st">'Normalized_Title'</span>] <span class="op">=</span> df_no_doi[<span class="st">'Title'</span>].<span class="bu">apply</span>(normalize_text)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The ouput of the script consisted of:</p>
+<ul>
+<li>The number of unique articles.</li>
+<li>The number of replicated entries.</li>
+<li>The number and proportion of records lacking DOIs.</li>
+<li>Replication counts among no-DOI entries across Title, Abstract, Authors, and Journal fields.</li>
+</ul>
+<p>These results were exported as .csv tables and a summary .txt file for documentation and quality control.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/database_flowchart.svg" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 3.</strong> Results of database compilation and dedepulication.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="automated-bibliographic-metadata-retrieval" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="automated-bibliographic-metadata-retrieval"><span class="header-section-number">3.6</span> Automated Bibliographic Metadata Retrieval</h2>
+<p>Large-scale literature reviews require the management of extensive citation libraries, where manual retrieval of reference metadata is both inefficient and prone to formatting inconsistencies. Unique identifiers such as DOIs provide a reliable key for automated access to standardized citation records, enabling reproducible and consistent bibliographic handling across heterogeneous data sources.</p>
+<p>To operationalize this, a custom Python-based retrieval pipeline was implemented to programmatically obtain BibTeX entries for all articles in the dataset. The script accepts a CSV containing DOIs and queries the CrossRef REST API <span class="citation" data-cites="hendricks2020crossref lammey2015crossref"><a href="#ref-hendricks2020crossref" role="doc-biblioref">[42]</a>, <a href="#ref-lammey2015crossref" role="doc-biblioref">[43]</a></span> for each record, executing requests concurrently using a five-worker thread pool to reduce latency and improve throughput. This automated approach ensured uniform reference formatting, minimized manual intervention, and produced a structured citation corpus suitable for downstream analysis.</p>
+<p>Each DOI request was subject to a retry policy with exponential backoff to handle temporary network failures or rate limiting. Successful responses were stored individually as .bib files in a designated output directory, with filenames normalized to ensure compatibility with local file systems. DOIs that could not be resolved or returned invalid responses were recorded separately.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_bibtex(doi, max_retries<span class="op">=</span><span class="dv">3</span>, timeout<span class="op">=</span><span class="dv">15</span>):</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    api_url <span class="op">=</span> <span class="ss">f"https://api.crossref.org/works/</span><span class="sc">{</span>doi<span class="sc">}</span><span class="ss">/transform/application/x-bibtex"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> attempt <span class="kw">in</span> <span class="bu">range</span>(max_retries):</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> requests.get(api_url, timeout<span class="op">=</span>timeout)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span> doi, response.text</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.exceptions.Timeout:</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>            sleep(randint(<span class="dv">1</span>, <span class="dv">3</span>))</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> doi, <span class="va">None</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To optimize performance when processing thousands of DOIs, the system employs concurrent programming using a thread pool. This allows multiple API requests to execute simultaneously, dramatically reducing total execution time compared to sequential processing.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_bibtex_entries(input_csv, output_folder, failed_csv, success_csv):</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    input_df <span class="op">=</span> pd.read_csv(input_csv)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    dois <span class="op">=</span> input_df[<span class="st">'DOI'</span>]</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    bibtex_results <span class="op">=</span> {}</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> ThreadPoolExecutor(max_workers<span class="op">=</span><span class="dv">5</span>) <span class="im">as</span> executor:</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        future_to_doi <span class="op">=</span> {executor.submit(fetch_bibtex, doi): doi <span class="cf">for</span> doi <span class="kw">in</span> dois}</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> future <span class="kw">in</span> as_completed(future_to_doi):</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>            doi, bibtex_content <span class="op">=</span> future.result()</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>            bibtex_results[doi] <span class="op">=</span> bibtex_content</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To ensure reproducibility and transparency, four types of logs were generated:</p>
+<table class="caption-top table">
+<caption><strong>Table 2.</strong> Output structure of the BibTex Extraction code.</caption>
+<colgroup>
+<col style="width: 19%">
+<col style="width: 38%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Output Artifact</th>
+<th>Contents</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>bibtex_files/*.bib</code></td>
+<td>Individual BibTeX citation files</td>
+<td>Input to reference managers / LaTeX</td>
+</tr>
+<tr class="even">
+<td><code>saved_entries.csv</code></td>
+<td>DOIs successfully retrieved</td>
+<td>Accountability and success summary</td>
+</tr>
+<tr class="odd">
+<td><code>failed_entries.csv</code></td>
+<td>DOIs that could not be fetched</td>
+<td>Manual follow-up (e.g., publisher-restricted)</td>
+</tr>
+<tr class="even">
+<td><code>bibtex_stats.txt</code></td>
+<td>Aggregate retrieval statistics</td>
+<td>Workflow record-keeping and reproducibility</td>
+</tr>
+</tbody>
+</table>
+<p>This automated approach enabled high-throughput citation acquisition, ensured consistent formatting and minimized manual intervention.</p>
+<p>The output could also be integrated with softwares such as <a href="https://www.mendeley.com/search/">Mendeley</a>, <a href="https://www.zotero.org/">Zotero</a> and <a href="https://www.latex-project.org/">LaTeX</a>.</p>
+</section>
+<section id="asreview-a-scalable-ai-augmented-framework-for-accelerating-systematic-literature-review" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="asreview-a-scalable-ai-augmented-framework-for-accelerating-systematic-literature-review"><span class="header-section-number">3.7</span> ASReview : A Scalable, AI-Augmented Framework for Accelerating Systematic Literature Review</h2>
+<p>ASReview functions as an AI-aided Systematic Reviewing tool, specifically engineered as an open-source machine learning framework that aims to aid in efficient and transparent systematic reviews <span class="citation" data-cites="van2021open de5136987asreview"><a href="#ref-van2021open" role="doc-biblioref">[29]</a>, <a href="#ref-de5136987asreview" role="doc-biblioref">[36]</a></span>.</p>
+<section id="server-setup-and-sotware-overview" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="server-setup-and-sotware-overview"><span class="header-section-number">3.7.1</span> Server Setup and Sotware Overview</h3>
+<p>A server-based instance of the open-source software framework ASReview was deployed at the <a href="https://www.iwr.uni-heidelberg.de/en">Interdisciplinary Center for Scientific Computing (IWR)</a> at <a href="https://www.iwr.uni-heidelberg.de/en">Heidelberg University</a>. This setup provides a high-performance, multi-user platform for the AI-aided screening of scientific literature.</p>
+<p>Its primary task is the semi-automation of the demanding literature screening phase (titles and abstracts), aiming to streamline the identification and selection of primary studies. <strong>This approach leverages an Active Learning (AL) pipeline, integrating a transformer-based language model for semantic feature extraction and a robust ensemble classifier for prioritization, demonstrating a principled methodology to drastically reduce the manual screening burden while preserving the rigorous recall demanded by systematic review standards.</strong></p>
+</section>
+<section id="methodological-framework" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="methodological-framework"><span class="header-section-number">3.7.2</span> Methodological Framework</h3>
+<p>The ASReview pipeline is engineered around an iterative Active Learning (AL) cycle, designed to minimize the cardinality of the manually screened set required to identify nearly all relevant documents. Formally, given a corpus of <span class="math inline">\(N\)</span> documents <span class="math inline">\(D = \\{d_1, d_2, ..., d_N\\}\)</span>, the AL algorithm iteratively selects a document <span class="math inline">\(d^*\)</span> from the unlabeled pool <span class="math inline">\(U_t\)</span> for labeling by a human reviewer (the ‘oracle’).</p>
+<p><strong>This selection is made by a query strategy, which acts as a ranking engine. After each human labeling action, the model reassesses the entire unlabeled pool, predicting the probability of relevance for every document. It then identifies and promotes the single most promising document (the one with the highest predicted relevance) to the top of the screening queue. This dynamic re-ranking ensures the reviewer is always presented with the next most likely relevant record, effectively rearranging the pile in real-time to maximize screening efficiency.</strong></p>
+<p>The working pipeline for this model is comprised of these five synergistic components that can be customized for the best desired output:</p>
+<ul>
+<li>Feature Extraction</li>
+<li>Classification Algorithm</li>
+<li>lefmkmeok</li>
+<li>kokrmofor</li>
+<li>k ro fpr f</li>
+</ul>
+</section>
+<section id="feature-extraction" class="level3" data-number="3.7.3">
+<h3 data-number="3.7.3" class="anchored" data-anchor-id="feature-extraction"><span class="header-section-number">3.7.3</span> Feature Extraction</h3>
+<p>A feature extractor is a model that transforms raw data into a compact set of informative variables for downstream analysis or prediction. This function <span class="math inline">\(\phi: d_i \rightarrow \mathbf{x}_i \in \mathbb{R}^{768}\)</span> maps a document’s text to a dense vector representation.</p>
+<p>In this case, the <strong><a href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2"><code>all-mpnet-base-v2</code></a></strong> model was employed, a variant of <strong>Sentence-BERT (Bidirectional Encoder Representations from Transformers)</strong>.</p>
+<p>This model is based on the <code>microsoft/mpnet-base</code> architecture, a pre-trained Transformer network that uses masked and permuted language modeling objectives to develop a deep, contextual understanding of language. It was further fine-tuned on a massive dataset of over 1 billion sentence pairs using a contrastive learning objective. The training aim was to minimize the distance between embeddings of semantically similar sentences (e.g., paraphrases) while maximizing the distance between dissimilar ones, creating a semantically meaningful 768-dimensional latent space.</p>
+<p>Unlike dataset-specific methods like Doc2Vec, the dimensions of an SBERT embedding are not directly interpretable but are fixed, abstract features learned during this large-scale pre-training, capturing complex linguistic properties.</p>
+</section>
+<section id="classification-algorithm" class="level3" data-number="3.7.4">
+<h3 data-number="3.7.4" class="anchored" data-anchor-id="classification-algorithm"><span class="header-section-number">3.7.4</span> Classification Algorithm</h3>
+<p>A Random Forest (RF) classifier was utilized, an ensemble of <span class="math inline">\(K\)</span> decision trees <span class="math inline">\(\\{T_1, T_2, ..., T_K\\}\)</span>. In a random forest classifier, each tree <span class="math inline">\(T_k\)</span> is grown on a bootstrapped sample of the training data and a random subset of the <span class="math inline">\(m\)</span> features, injecting robustness. The final relevance probability for a document with embedding <span class="math inline">\(\mathbf{x}_i\)</span> is given by:</p>
+<p><span class="math display">\[
+\hat{y}_i = \frac{1}{K} \sum_{k=1}^{K} T_k(\mathbf{x}_i)
+\]</span></p>
+<p>This ensemble approach is particularly effective in the AL context. Its inherent stability mitigates overfitting to the small, imbalanced labeled sets <span class="math inline">\(L_t\)</span> prevalent in early screening stages. Furthermore, its non-parametric nature allows it to capture complex, non-linear decision boundaries in the SBERT embedding space, making it exceptionally powerful for identifying the sparse, heterogeneous relevant records in the later stages of screening.</p>
+</section>
+<section id="query-strategy" class="level3" data-number="3.7.5">
+<h3 data-number="3.7.5" class="anchored" data-anchor-id="query-strategy"><span class="header-section-number">3.7.5</span> Query Strategy</h3>
+<p><strong>The system employs a maximum certainty query strategy, selecting for review the document with the highest predicted probability of relevance.</strong></p>
+<p><span class="math display">\[
+d^* = \arg\max_{d_i \in U_t} \hat{y}_i .
+\]</span></p>
+<p>Where: - <span class="math inline">\(d^*\)</span> = the selected document for labeling - <span class="math inline">\(U_t\)</span> = set of unlabeled records at time <span class="math inline">\(t\)</span> - <span class="math inline">\(\hat{y}_i\)</span> = predicted relevance score for document <span class="math inline">\(d_i\)</span></p>
+<p>This approach directly prioritizes the records most likely to be relevant.</p>
+</section>
+<section id="balancing-strategy" class="level3" data-number="3.7.6">
+<h3 data-number="3.7.6" class="anchored" data-anchor-id="balancing-strategy"><span class="header-section-number">3.7.6</span> Balancing Strategy</h3>
+<p>To counteract the extreme class imbalance (typically &gt;95% irrelevant records), a dynamic balancing algorithm was used to ensure the training data for the RF contains a representative ratio of relevant and irrelevant instances, preventing classifier bias.</p>
+</section>
+<section id="stopping-rule" class="level3" data-number="3.7.7">
+<h3 data-number="3.7.7" class="anchored" data-anchor-id="stopping-rule"><span class="header-section-number">3.7.7</span> Stopping Rule</h3>
+<p>The process can be terminated by a formal stopping rule, such as achieving a pre-specified Work Saved over Sampling (WSS) value, which quantifies the fraction of screening saved at a target recall level <span class="math inline">\(R\)</span>:</p>
+<p><span class="math display">\[
+\text{WSS}@R = 1 - \frac{\text{records screened to find } R \times \text{total relevants}}{N}
+\]</span></p>
+<p><strong>Example from ASReview output:</strong> - <span class="math inline">\(\text{WSS}@0.95 = 0.85\)</span>: 85% work saved finding 95% of relevant studies - <span class="math inline">\(\text{WSS}@0.90 = 0.90\)</span>: 90% work saved finding 90% of relevant studies</p>
+</section>
+<section id="visualizing-the-feature-space" class="level3" data-number="3.7.8">
+<h3 data-number="3.7.8" class="anchored" data-anchor-id="visualizing-the-feature-space"><span class="header-section-number">3.7.8</span> Visualizing the Feature Space</h3>
+<p>The superiority of the SBERT-RF synergy is rooted in the quality of the feature space. A deeper understanding and good illustration for the same can be found <a href="https://asreview.nl/blog/asreview-model-selection-guide/">here</a>.</p>
+<p>In their example, they project embeddings from three different feature extractors—TF-IDF, Doc2Vec, and SBERT—for a set of simple sentences onto two dimensions using Principal Component Analysis (PCA).</p>
+<ul>
+<li><strong>TF-IDF &amp; Doc2Vec:</strong> These methods typically produce clusters based on keyword overlap or shallow semantic similarity. For instance, “I love cookies” and “I hate cookies” may be placed close together due to the shared word “cookies,” failing to capture their opposing sentiments.</li>
+<li><strong>SBERT:</strong> The transformer-based embeddings create a geometrically superior layout. Sentences are clustered by semantic <em>meaning</em> rather than just lexical overlap. “I love cookies” and “I love cake” form one cluster (positive sentiment about food), while “I hate cookies” and “I hate cake” form another (negative sentiment). The sentence “I like desserts” is appropriately positioned near the positive cluster. This nuanced representation provides the RF classifier with a highly discriminative space in which to learn an effective decision boundary for relevance.</li>
+</ul>
+<p>Thus, by deploying a high-performance, server-based ASReview instance and leveraging the advanced representational capabilities of SBERT coupled with the stable, non-parametric learning of Random Forests, a scalable and scientifically rigorous solution to the systematic review bottleneck was provided.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ASReview_user_interface.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 4.</strong> (a) Porject Overview interface of the ASReview Sodtware. (b) Project History page of ASReview</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="preliminary-data-extraction-using-chatgpt" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="preliminary-data-extraction-using-chatgpt"><span class="header-section-number">3.8</span> Preliminary Data Extraction using ChatGPT</h2>
+<p>After the relevant papers are retrieved from the ASReview screening, specific information such as source, plastic types, methods used, and other key information need to be extracted. Performing this task manually across hundreds of papers is both time-intensive and cognitively demanding. The goal of this code is to evolve into a general-purpose information scanning framework that can automatically interpret such fields and extract domain-specific information based on user-defined criteria by employing a large language model (LLM).</p>
+<section id="general-setup" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored" data-anchor-id="general-setup"><span class="header-section-number">3.8.1</span> General Setup</h3>
+<p>The implementation begins by setting up the Python environment using the <code>pandas</code> and <code>openai</code> libraries. <code>Pandas</code> handles data loading and CSV operations <span class="citation" data-cites="reback2020pandas"><a href="#ref-reback2020pandas" role="doc-biblioref">[44]</a></span>, while the <code>OpenAI library</code> <span class="citation" data-cites="openai_api"><a href="#ref-openai_api" role="doc-biblioref">[45]</a></span> enables interaction with the GPT model through an authenticated API client. The script reads an input CSV file containing research paper titles and abstracts into a DataFrame and verifies the presence of both required columns. This ensures the dataset is properly structured for analysis. Finally, a results list is initialized to store each paper’s title, abstract, and extracted information identified by the model.</p>
+</section>
+<section id="explanation-of-iterating-through-rows-and-fetching-data-from-the-chatgpt-api" class="level3" data-number="3.8.2">
+<h3 data-number="3.8.2" class="anchored" data-anchor-id="explanation-of-iterating-through-rows-and-fetching-data-from-the-chatgpt-api"><span class="header-section-number">3.8.2</span> Explanation of Iterating Through Rows and Fetching Data from the ChatGPT API</h3>
+<p>This code integrates ChatGPT (via the OpenAI API) to automatically extract structured information from research papers, using fields such as the title and abstract.</p>
+<p>While this basic example illustrated below focuses on identifying polymers, sample source and classifying papers as review or primary studies, the approach is general-purpose and can be adapted to extract any form of domain-specific information — such as methods, materials, results, or keywords — depending on the research goal.</p>
+<p>The most critical component is the <code>prompt</code>, which defines the model’s role, task, and expected output format. A well-designed prompt ensures that ChatGPT interprets scientific text accurately and returns consistent, structured responses suitable for large-scale automated analysis.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, row <span class="kw">in</span> df.head(<span class="dv">100</span>).iterrows():</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>   title <span class="op">=</span> <span class="bu">str</span>(row[<span class="st">"Title"</span>])</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>   abstract <span class="op">=</span> <span class="bu">str</span>(row[<span class="st">"Abstract"</span>])</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>   text <span class="op">=</span> <span class="ss">f"Title: </span><span class="sc">{</span>title<span class="sc">}</span><span class="ch">\n</span><span class="ss">Abstract: </span><span class="sc">{</span>abstract<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>   <span class="co"># Step 3: Prompt ChatGPT for plastics, paper type, and source type</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>   prompt <span class="op">=</span> <span class="ss">f"""</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="ss">   You are an expert in environmental and materials science, specialized in analyzing research literature.</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="ss">   Read the following research paper title and abstract, and identify three pieces of information:</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a><span class="ss">   1. **Plastics or Polymers**: List all types of plastics or polymers mentioned.</span></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a><span class="ss">      - If none are mentioned, return 'None'.</span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a><span class="ss">   2. **Paper Type**: Determine whether the paper is a 'Review Paper' or a 'Primary Study'.</span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a><span class="ss">      - A review paper summarizes prior research.</span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a><span class="ss">      - A primary study presents new experiments or data.</span></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a><span class="ss">   3. **Source Type**: Identify the environmental or sampling source being studied.</span></span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a><span class="ss">      - Examples: River, Estuary, Bay, Lake, Reservoir, Mangrove, WWTP Effluent, Open Ocean, Marine, Intertidal Zone, etc.</span></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a><span class="ss">      - If unclear, return 'Unknown'.</span></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a><span class="ss">     </span></span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a><span class="ss">   4.  **Method_AR_Detection**:Summarize the antibiotic resistance detection methodology</span></span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a><span class="ss">       - Examples: qPCR, PCR, Metagenomics, sequencing platforms, reference databases, bioinformatics tools, etc.</span></span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a><span class="ss">   Return your answer strictly in JSON format as:</span></span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a><span class="ss">   </span><span class="ch">{{</span></span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a><span class="ss">       "plastics_found": "...",</span></span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a><span class="ss">       "paper_type": "...",</span></span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a><span class="ss">       "source_type": "...",</span></span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a><span class="ss">       method_ar_detection: "..."</span></span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a><span class="ss">   </span><span class="ch">}}</span></span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a><span class="ss">   Text:</span></span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a><span class="ss">   </span><span class="sc">{</span>text<span class="sc">}</span></span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a><span class="ss">   """</span></span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a>   <span class="co"># Step 4: Query ChatGPT</span></span>
+<span id="cb11-50"><a href="#cb11-50" aria-hidden="true" tabindex="-1"></a>   response <span class="op">=</span> client.chat.completions.create(</span>
+<span id="cb11-51"><a href="#cb11-51" aria-hidden="true" tabindex="-1"></a>       model<span class="op">=</span><span class="st">"gpt-4o-mini"</span>,</span>
+<span id="cb11-52"><a href="#cb11-52" aria-hidden="true" tabindex="-1"></a>       messages<span class="op">=</span>[</span>
+<span id="cb11-53"><a href="#cb11-53" aria-hidden="true" tabindex="-1"></a>           {<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: <span class="st">"You are a scientific text analysis assistant."</span>},</span>
+<span id="cb11-54"><a href="#cb11-54" aria-hidden="true" tabindex="-1"></a>           {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: prompt}</span>
+<span id="cb11-55"><a href="#cb11-55" aria-hidden="true" tabindex="-1"></a>       ]</span>
+<span id="cb11-56"><a href="#cb11-56" aria-hidden="true" tabindex="-1"></a>   )</span>
+<span id="cb11-57"><a href="#cb11-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-58"><a href="#cb11-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-59"><a href="#cb11-59" aria-hidden="true" tabindex="-1"></a>   <span class="co"># Step 5: Extract and parse response</span></span>
+<span id="cb11-60"><a href="#cb11-60" aria-hidden="true" tabindex="-1"></a>   content <span class="op">=</span> response.choices[<span class="dv">0</span>].message.content.strip()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Results:</strong></p>
+<table class="caption-top table">
+<caption><strong>Table 3.</strong> Example output for the preliminary text extraction using ChatGPT.</caption>
+<colgroup>
+<col style="width: 12%">
+<col style="width: 17%">
+<col style="width: 25%">
+<col style="width: 20%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Abstract</th>
+<th>Plastics Found</th>
+<th>Paper Type</th>
+<th>Source Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plastic Polymers And Antibiotic Resist…</td>
+<td>Microbial colonization of plastic…</td>
+<td>PVC, PE</td>
+<td>Primary Study</td>
+<td>Ross Sea</td>
+</tr>
+<tr class="even">
+<td>The Variation Of Various Microplastics On…</td>
+<td>Wastewater treatment plants (WWTP…</td>
+<td>PET, PE, PLA, PVC</td>
+<td>Primary Study</td>
+<td>WWTP</td>
+</tr>
+<tr class="odd">
+<td>Marine Plastisphere Selectively Enriches…</td>
+<td>Several studies have focused o…</td>
+<td>PE, PP, PS, PVC</td>
+<td>Primary Study</td>
+<td>Marine</td>
+</tr>
+<tr class="even">
+<td>Taxonomic Variation, Plastic Degradation…</td>
+<td>Wastewater treatment facilities…</td>
+<td>LDPE, nylon-6, PET, polylactic acid, oxygen</td>
+<td>Primary Study</td>
+<td>WWTP</td>
+</tr>
+<tr class="odd">
+<td>Bioplastic Accumulates Antibiotic And Me…</td>
+<td>The oceans are increasingly pol…</td>
+<td>polyhydroxyalkanoate, polyethylene terephthalate (PET)</td>
+<td>Primary Study</td>
+<td>Marine</td>
+</tr>
+<tr class="even">
+<td>Effects Of Microplastics On Antibiotic Re…</td>
+<td>Microplastics and antibiotic res…</td>
+<td>PE, PVC, PVA</td>
+<td>Primary Study</td>
+<td>Estuary</td>
+</tr>
+<tr class="odd">
+<td>Microplastics Shape Microbial Interactor…</td>
+<td>Wastewater treatment plants (WW…</td>
+<td>polyethylene terephthalate, silicone resin</td>
+<td>Primary Study</td>
+<td>WWTP</td>
+</tr>
+<tr class="even">
+<td>Plastisphere Showing Unique Microbial…</td>
+<td>Plastisphere (the biofilm on micr…</td>
+<td>PVC</td>
+<td>Primary Study</td>
+<td>WWTP</td>
+</tr>
+<tr class="odd">
+<td>Size Effects Of Microplastics On Antibiotic…</td>
+<td>Microplastics (MPs) in aquatic…</td>
+<td>polyethylene, polypropylene, polystyrene</td>
+<td>Primary Study</td>
+<td>River</td>
+</tr>
+<tr class="even">
+<td>Metagenomic Analysis Reveals The Effects…</td>
+<td>Sewage sludge is recognized as b…</td>
+<td>PE, PET, PLA</td>
+<td>Primary Study</td>
+<td>WWTP</td>
+</tr>
+<tr class="odd">
+<td>Microplastics Exacerbate The Ecological…</td>
+<td>Wetlands are vital components o…</td>
+<td>polyethylene, polypropylene</td>
+<td>Primary Study</td>
+<td>Lake</td>
+</tr>
+<tr class="even">
+<td>Responses Of Bacterial Communities And…</td>
+<td>In present study, copper (Cu), Zn…</td>
+<td>-</td>
+<td>Primary Study</td>
+<td>Sewage</td>
+</tr>
+<tr class="odd">
+<td>Antibiotic Resistance Genes In Biofilms Of…</td>
+<td>Plastic wastes are ubiquitous i…</td>
+<td>PE, PP, PET</td>
+<td>Primary Study</td>
+<td>Estuary</td>
+</tr>
+<tr class="even">
+<td>Distribution And Potential Ecological Ris…</td>
+<td>The interaction between microplast…</td>
+<td>Polyethylene, Silicone</td>
+<td>Primary Study</td>
+<td>Bay</td>
+</tr>
+<tr class="odd">
+<td>Source Antibiotics Degradation And High-Ris…</td>
+<td>Microplastics (MPs) are increasin…</td>
+<td>-</td>
+<td>Primary Study</td>
+<td>Urban aquatic ecosystems</td>
+</tr>
+<tr class="even">
+<td>Riverine Microplastics And Bacterial Co…</td>
+<td>Microplastics could serve as mat…</td>
+<td>PP, PET</td>
+<td>Primary Study</td>
+<td>River</td>
+</tr>
+<tr class="odd">
+<td>Microplastics Affect Bacterial Communiti…</td>
+<td>Along with global plastic produc…</td>
+<td>PE, PP, PVC, PET</td>
+<td>Primary Study</td>
+<td>Estuary</td>
+</tr>
+<tr class="even">
+<td>Combined Environmental Pressure Induce…</td>
+<td>The characteristics and dynamic poly…</td>
+<td>polylactic acid</td>
+<td>Primary Study</td>
+<td>Unknown</td>
+</tr>
+<tr class="odd">
+<td>Size-Dependent Promotion Of Micro/Nano…</td>
+<td>Constructed wetlands (CWs) has poly…</td>
+<td>PS</td>
+<td>Primary Study</td>
+<td>Unknown</td>
+</tr>
+<tr class="even">
+<td>Understanding The Mechanism Of Micropl…</td>
+<td>The pervasive presence of micropl…</td>
+<td>PHA, PLA</td>
+<td>Primary Study</td>
+<td>Unknown</td>
+</tr>
+<tr class="odd">
+<td>Size-Dependent Effects Of Microplastic…</td>
+<td>Microplastics (MPs) were combined, …</td>
+<td>PE, PET</td>
+<td>Primary Study</td>
+<td>Unknown</td>
+</tr>
+<tr class="even">
+<td>Tetracycline Accumulation In Biofilms Enh…</td>
+<td>Microorganisms are present in …</td>
+<td>-</td>
+<td>Primary Study</td>
+<td>Unknown</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="conclusion" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Conclusion</h1>
+<p>The intersection of microplastic (MP) pollution and antimicrobial resistance (AMR) represents a synergistic and escalating threat to global environmental and public health. Research into this progression is critical, yet the field is hampered by fragmented findings and an exponential growth in scientific literature that has overwhelmed traditional review methodologies.</p>
+<p>The primary achievement of this project, as detailed in this report, is the design and implementation of a robust, scalable, and transparent methodological framework. This integrated pipeline provides a powerful solution to the research bottleneck, creating a systematic pathway to consolidate disparate evidence. This commitment to methodological rigor is further underscored by the preregistration of the study protocol on the Open Science Framework prior to data collection. <strong>The pipeline is therefore not merely a tool for this review, but a methodological model for imposing structure on similarly complex and rapidly expanding research domains.</strong></p>
+<p>The project’s principal innovation is a multi-stage, reproducible workflow that systematically integrates data retrieval, unification, and analysis. This pipeline addresses the entire evidence synthesis lifecycle, from initial literature search to preliminary data extraction. + Automated and Hybrid Data Retrieval: An automated Python pipeline was developed and deployed for the PubMed database, leveraging its open Application Programming Interface (API) to ensure efficient, transparent, and reproducible data collection. This was complemented by manual data extraction from restricted-access databases—EMBASE, Web of Science, and GreenFILE. This hybrid strategy maximized literature coverage while providing a stark demonstration of the superiority of open-access APIs for enabling large-scale, reproducible science. + Rigorous Data Unification: Data from heterogeneous sources were systematically harmonized into a single, clean corpus through a process of metadata standardization, text normalization, and multi-tiered deduplication. This step was critical for creating the unified, machine-readable corpus that is essential for the effective training and application of the downstream machine learning models. + Accelerated and Intelligent Screening: The deployment of the ASReview framework provided a principled solution to the manual screening bottleneck. The synergy between advanced feature extraction using the SBERT all-mpnet-base-v2 model, which creates a semantically rich vector space, and a robust Random Forest ensemble classifier, which excels at identifying complex patterns within that space, enabled a highly efficient active learning process. This “researcher-in-the-loop” approach, where the model learns from human decisions in real-time to continuously refine its predictions, dramatically increases efficiency by prioritizing the most relevant articles for review. + Proof-of-Concept for Automated Data Extraction: A successful preliminary application of a Large Language Model (LLM), specifically ChatGPT, demonstrated a viable pathway for automating the final, labor-intensive stages of data synthesis. The model was effectively prompted to extract critical, structured data (such as specific plastic polymer types, environmental settings, and antimicrobial resistance genes (ARGs)) directly from unstructured abstracts, establishing a proof-of-concept for a general-purpose information extraction tool.</p>
+<p>By successfully integrating these advanced components, this project has established more than just a tool for a single review; it has created a methodological blueprint for conducting future large-scale systematic reviews in any rapidly evolving scientific field. It can enable rapid synthesis of evidence needed to inform policy and intervention strategies in other fields facing similar “big literature” challenges. This framework is the engine that will directly power the achievement of the project’s dual objectives: the comprehensive synthesis of evidence on the MP-AMR nexus (the primary objective) and the production of a publicly available, queryable database (the secondary objective).</p>
+<p>The work is also strategically aligned with the overarching goals of the EU-funded TULIP project (Community-based engagement and intervenTions to stem the tide of antimicrobial resistance spread in the aqUatic environments catalysed by cLImate change and Plastic pollution interactions), positioning it as a key contribution to the international effort to address the triple threat of microplastics, AMR, and climate change. While this methodological foundation is strong, a transparent discussion of its current limitations is essential for contextualizing the results and charting a clear course for <a href="https://aishwarya-girish.github.io/Joacim-Group-IWR-Internship/future_research.html">future work</a>.</p>
+</section>
+<section id="limitations" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Limitations</h1>
+<p>The following limitations are presented not as shortcomings, but as a transparent and critical assessment of the study’s current boundaries. These limitations are inherent to the phased nature of large-scale evidence synthesis and serve as a direct guide for the subsequent stages of research and development.</p>
+<ul>
+<li>The current study is a forthcoming activity. Therefore, the primary limitation is that no scientific conclusions regarding the state of the field have yet been drawn from the collected data.</li>
+<li>The automated pipeline developed for PubMed demonstrated exceptional efficiency and reproducibility. However, the restricted API access for EMBASE, Web of Science, and GreenFILE necessitated manual data extraction. This reliance on manual processes introduced potential for human error, reduced the overall reproducibility of the data collection phase, and incurred significant time costs, creating a methodological bottleneck that contrasts sharply with the efficiency of the automated PubMed workflow.</li>
+<li>The automated BibTeX retrieval pipeline, while efficient, relies on the availability of DOIs and the responsiveness of the CrossRef API. A small number of articles either lacked a DOI or could not be fetched due to API restrictions or publisher-specific barriers, requiring manual entry and introducing a minor inconsistency in the bibliographic management process.</li>
+<li>The search was limited to articles published in English between January 1, 2015, and February 10, 2025. This scope may inadvertently exclude relevant foundational studies published before or after this time period. It could also miss out on important research documented in non-English languages, defining a clear boundary for the generalizability of the eventual findings.</li>
+<li>Both the AI-aided screening in ASReview and the preliminary LLM-based data extraction are highly dependent on the quality, clarity, and completeness of article titles and abstracts. Poorly written or uninformative abstracts could lead to two potential errors: relevant studies being incorrectly screened out (false negatives) during the review phase, or key data points being missed or inaccurately extracted during the automated analysis phase.</li>
+<li>The preliminary data extraction using ChatGPT was confined to titles and abstracts. A comprehensive full-text analysis was not feasible at this stage because many articles are not open access, preventing their text from being processed through a cloud-based API. To perform a full-text analysis in the future, it would be necessary to install and run a local LLM, ensuring compliance with copyright and licensing restrictions for non-open-access publications.</li>
+</ul>
+<p>Acknowledging these constraints is fundamental to scientific rigor and is integral to contextualizing the project’s current outputs and validating its scientific trajectory. With these limitations and boundaries in mind, we can move forward efficiently and transition from refining our tools to strategically extracting meaningful scientific insights in the next phase.</p>
+</section>
+<section id="references" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> References</h1>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-hale2020global" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">R. C. Hale, M. E. Seeley, M. J. La Guardia, L. Mai, and E. Y. Zeng, <span>“A global perspective on microplastics,”</span> <em>Journal of Geophysical Research: Oceans</em>, vol. 125, no. 1, p. e2018JC014719, 2020.</div>
+</div>
+<div id="ref-dimante2024downward" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">I. Dimante-Deimantovica <em>et al.</em>, <span>“Downward migrating microplastics in lake sediments are a tricky indicator for the onset of the anthropocene,”</span> <em>Science advances</em>, vol. 10, no. 8, p. eadi8136, 2024.</div>
+</div>
+<div id="ref-stevenson2025rising" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">E. M. Stevenson, A. Buckling, M. Cole, P. K. Lindeque, and A. K. Murray, <span>“Rising tide to silent tsunami: Unveiling the role of plastics in driving antimicrobial resistance,”</span> <em>Journal of Hazardous Materials</em>, p. 138700, 2025.</div>
+</div>
+<div id="ref-magnano2023antimicrobial" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">R. Magnano San Lio, G. Favara, A. Maugeri, M. Barchitta, and A. Agodi, <span>“How antimicrobial resistance is linked to climate change: An overview of two intertwined global challenges,”</span> <em>International journal of environmental research and public health</em>, vol. 20, no. 3, p. 1681, 2023.</div>
+</div>
+<div id="ref-kariuki2024global" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">S. Kariuki, <span>“Global burden of antimicrobial resistance and forecasts to 2050,”</span> <em>The Lancet</em>, vol. 404, no. 10459, pp. 1172–1173, 2024.</div>
+</div>
+<div id="ref-naghavi2024global" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">M. Naghavi <em>et al.</em>, <span>“Global burden of bacterial antimicrobial resistance 1990–2021: A systematic analysis with forecasts to 2050,”</span> <em>The Lancet</em>, vol. 404, no. 10459, pp. 1199–1226, 2024.</div>
+</div>
+<div id="ref-aslam2024amr" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">B. Aslam <em>et al.</em>, <span>“AMR and sustainable development goals: At a crossroads,”</span> <em>Globalization and Health</em>, vol. 20, no. 1, p. 73, 2024.</div>
+</div>
+<div id="ref-shamskhany2021evidence" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Shamskhany, Z. Li, P. Patel, and S. Karimpour, <span>“Evidence of microplastic size impact on mobility and transport in the marine environment: A review and synthesis of recent research,”</span> <em>Frontiers in Marine Science</em>, vol. 8, p. 760649, 2021.</div>
+</div>
+<div id="ref-arias2019collateral" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">M. Arias-Andres, K. Rojas-Jimenez, and H.-P. Grossart, <span>“Collateral effects of microplastic pollution on aquatic microorganisms: An ecological perspective,”</span> <em>TrAC Trends in Analytical Chemistry</em>, vol. 112, pp. 234–240, 2019.</div>
+</div>
+<div id="ref-kaur2022microplastic" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">K. Kaur <em>et al.</em>, <span>“Microplastic-associated pathogens and antimicrobial resistance in environment,”</span> <em>Chemosphere</em>, vol. 291, p. 133005, 2022.</div>
+</div>
+<div id="ref-yu2022microplastisphere" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">X. Yu <em>et al.</em>, <span>“Microplastisphere may induce the enrichment of antibiotic resistance genes on microplastics in aquatic environments: A review,”</span> <em>Environmental Pollution</em>, vol. 310, p. 119891, 2022.</div>
+</div>
+<div id="ref-ferheen2024vehicle" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline">I. Ferheen, R. Spurio, and S. Marcheggiani, <span>“Vehicle transmission of antibiotic-resistant pathogens mediated by plastic debris in aquatic ecosystems,”</span> <em>Iscience</em>, vol. 27, no. 6, 2024.</div>
+</div>
+<div id="ref-yang2019plastics" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[13] </div><div class="csl-right-inline">Y. Yang <em>et al.</em>, <span>“Plastics in the marine environment are reservoirs for antibiotic and metal resistance genes,”</span> <em>Environment international</em>, vol. 123, pp. 79–86, 2019.</div>
+</div>
+<div id="ref-stevenson2024selection" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[14] </div><div class="csl-right-inline">E. M. Stevenson, A. Buckling, M. Cole, P. K. Lindeque, and A. K. Murray, <span>“Selection for antimicrobial resistance in the plastisphere,”</span> <em>Science of The Total Environment</em>, vol. 908, p. 168234, 2024.</div>
+</div>
+<div id="ref-tang2023antimicrobial" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[15] </div><div class="csl-right-inline">K. W. K. Tang, B. C. Millar, and J. E. Moore, <span>“Antimicrobial resistance (AMR),”</span> <em>British journal of biomedical science</em>, vol. 80, p. 11387, 2023.</div>
+</div>
+<div id="ref-aljeldah2022antimicrobial" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[16] </div><div class="csl-right-inline">M. M. Aljeldah, <span>“Antimicrobial resistance and its spread is a global threat,”</span> <em>Antibiotics</em>, vol. 11, no. 8, p. 1082, 2022.</div>
+</div>
+<div id="ref-yan2024combined" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[17] </div><div class="csl-right-inline">P. Yan <em>et al.</em>, <span>“Combined environmental pressure induces unique assembly patterns of micro-plastisphere biofilm microbial communities in constructed wetlands,”</span> <em>Water Research</em>, vol. 260, p. 121958, 2024.</div>
+</div>
+<div id="ref-tulloch2024microbial" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[18] </div><div class="csl-right-inline">C. L. Tulloch <em>et al.</em>, <span>“Microbial communities colonising plastics during transition from the wastewater treatment plant to marine waters,”</span> <em>Environmental microbiome</em>, vol. 19, no. 1, p. 27, 2024.</div>
+</div>
+<div id="ref-zeng2024travertine" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[19] </div><div class="csl-right-inline">H. Zeng <em>et al.</em>, <span>“Travertine deposition rather than tourism activity is the primary contributor to the microplastic risks in alpine karst lakes,”</span> <em>Journal of Hazardous Materials</em>, vol. 476, p. 135192, 2024.</div>
+</div>
+<div id="ref-joannard2024bacterial" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[20] </div><div class="csl-right-inline">B. Joannard and C. Sanchez-Cid, <span>“Bacterial dynamics of the plastisphere microbiome exposed to sub-lethal antibiotic pollution,”</span> <em>Microbiome</em>, vol. 12, no. 1, p. 97, 2024.</div>
+</div>
+<div id="ref-junaid2022wastewater" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[21] </div><div class="csl-right-inline">M. Junaid, S. Liu, H. Liao, X. Liu, Y. Wu, and J. Wang, <span>“Wastewater plastisphere enhances antibiotic resistant elements, bacterial pathogens, and toxicological impacts in the environment,”</span> <em>Science of the Total Environment</em>, vol. 841, p. 156805, 2022.</div>
+</div>
+<div id="ref-wright2020marine" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[22] </div><div class="csl-right-inline">R. J. Wright, G. Erni-Cassola, V. Zadjelovic, M. Latva, and J. A. Christie-Oleza, <span>“Marine plastic debris: A new surface for microbial colonization,”</span> <em>Environmental Science &amp; Technology</em>, vol. 54, no. 19, pp. 11657–11672, 2020.</div>
+</div>
+<div id="ref-rossi2025enrichment" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[23] </div><div class="csl-right-inline">F. Rossi, S. Santonicola, and G. Colavita, <span>“Enrichment of antibiotic resistance genes on plastic waste in aquatic ecosystems, aquatic animals, and fishery products,”</span> <em>Antibiotics</em>, vol. 14, no. 11, p. 1106, 2025.</div>
+</div>
+<div id="ref-jaafarzadeh2024microplastics" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[24] </div><div class="csl-right-inline">N. Jaafarzadeh and N. Talepour, <span>“Microplastics as carriers of antibiotic resistance genes and pathogens in municipal solid waste (MSW) landfill leachate and soil: A review,”</span> <em>Journal of Environmental Health Science and Engineering</em>, vol. 22, no. 1, pp. 1–12, 2024.</div>
+</div>
+<div id="ref-bartkova2021techniques" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[25] </div><div class="csl-right-inline">S. Bartkova, A. Kahru, M. Heinlaan, and O. Scheler, <span>“Techniques used for analyzing microplastics, antimicrobial resistance and microbial community composition: A mini-review,”</span> <em>Frontiers in Microbiology</em>, vol. 12, p. 603967, 2021.</div>
+</div>
+<div id="ref-luo2023determining" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[26] </div><div class="csl-right-inline">G. Luo <em>et al.</em>, <span>“Determining the contribution of micro/nanoplastics to antimicrobial resistance: Challenges and perspectives,”</span> <em>Environmental Science &amp; Technology</em>, vol. 57, no. 33, pp. 12137–12152, 2023.</div>
+</div>
+<div id="ref-fu2024antibiotic" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[27] </div><div class="csl-right-inline">C.-X. Fu <em>et al.</em>, <span>“Antibiotic resistance at environmental multi-media interfaces through integrated genotype and phenotype analysis,”</span> <em>Journal of Hazardous Materials</em>, vol. 480, p. 136160, 2024.</div>
+</div>
+<div id="ref-golwala2024microplastics" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[28] </div><div class="csl-right-inline">H. Golwala, M. A. Saldana, A. Talwalkar, S. E. Philo, and A. L. Smith, <span>“Microplastics may not proliferate antibiotic resistance during mainstream anaerobic treatment,”</span> <em>ACS ES&amp;T Engineering</em>, vol. 4, no. 11, pp. 2787–2798, 2024.</div>
+</div>
+<div id="ref-van2021open" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[29] </div><div class="csl-right-inline">R. Van De Schoot <em>et al.</em>, <span>“An open source machine learning framework for efficient and transparent systematic reviews,”</span> <em>Nature machine intelligence</em>, vol. 3, no. 2, pp. 125–133, 2021.</div>
+</div>
+<div id="ref-lear2021plastics" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[30] </div><div class="csl-right-inline">G. Lear <em>et al.</em>, <span>“Plastics and the microbiome: Impacts and solutions,”</span> <em>Environmental Microbiome</em>, vol. 16, no. 1, p. 2, 2021.</div>
+</div>
+<div id="ref-zhu2025understanding" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[31] </div><div class="csl-right-inline">T. Zhu <em>et al.</em>, <span>“Understanding the mechanism of microplastic-associated antibiotic resistance genes in aquatic ecosystems: Insights from metagenomic analyses and machine learning,”</span> <em>Water Research</em>, vol. 268, p. 122570, 2025.</div>
+</div>
+<div id="ref-tang2024aged" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[32] </div><div class="csl-right-inline">K. H. D. Tang and R. Li, <span>“Aged microplastics and antibiotic resistance genes: A review of aging effects on their interactions,”</span> <em>Antibiotics</em>, vol. 13, no. 10, p. 941, 2024.</div>
+</div>
+<div id="ref-raju2025interplay" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[33] </div><div class="csl-right-inline">N. P. Raju, M. Dhanorkar, and P. Singh, <span>“The interplay between antimicrobial resistance genes and emerging contaminants in wastewater treatment plants: Key players in one health,”</span> <em>Annals of Microbiology</em>, vol. 75, no. 1, p. 28, 2025.</div>
+</div>
+<div id="ref-okoli2015guide" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[34] </div><div class="csl-right-inline">C. Okoli, <span>“A guide to conducting a standalone systematic literature review,”</span> <em>Communications of the association for information systems</em>, vol. 37, 2015.</div>
+</div>
+<div id="ref-nightingale2009guide" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[35] </div><div class="csl-right-inline">A. Nightingale, <span>“A guide to systematic literature reviews,”</span> <em>Surgery (Oxford)</em>, vol. 27, no. 9, pp. 381–384, 2009.</div>
+</div>
+<div id="ref-de5136987asreview" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[36] </div><div class="csl-right-inline">J. de Bruin <em>et al.</em>, <span>“ASReview LAB v2: Open-source text screening with multiple agents and oracles,”</span> <em>Available at SSRN 5136987</em>.</div>
+</div>
+<div id="ref-richardson2007beautiful" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[37] </div><div class="csl-right-inline">L. Richardson, <span>“Beautiful soup documentation.”</span> April, 2007.</div>
+</div>
+<div id="ref-uzun2018comparison" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[38] </div><div class="csl-right-inline">E. Uzun, T. Yerlikaya, and O. Kirat, <span>“Comparison of python libraries used for web data extraction,”</span> <em>Journal of the Technical University at Plovdiv</em>, vol. 24, pp. 87–92, 2018.</div>
+</div>
+<div id="ref-sayers2010general" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[39] </div><div class="csl-right-inline">E. Sayers, <span>“A general introduction to the e-utilities,”</span> <em>Entrez Programming Utilities Help [Internet]. Bethesda (MD): National Center for Biotechnology Information (US)</em>, 2010.</div>
+</div>
+<div id="ref-kans2024entrez" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[40] </div><div class="csl-right-inline">J. Kans, <span>“Entrez direct: E-utilities on the UNIX command line,”</span> in <em>Entrez programming utilities help [internet]</em>, National Center for Biotechnology Information (US), 2024.</div>
+</div>
+<div id="ref-sayers2009utilities" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[41] </div><div class="csl-right-inline">E. Sayers, <span>“The e-utilities in-depth: Parameters, syntax and more,”</span> <em>Entrez Programming Utilities Help [Internet]</em>, 2009.</div>
+</div>
+<div id="ref-hendricks2020crossref" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[42] </div><div class="csl-right-inline">G. Hendricks, D. Tkaczyk, J. Lin, and P. Feeney, <span>“Crossref: The sustainable source of community-owned scholarly metadata,”</span> <em>Quantitative Science Studies</em>, vol. 1, no. 1, pp. 414–427, 2020.</div>
+</div>
+<div id="ref-lammey2015crossref" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[43] </div><div class="csl-right-inline">R. Lammey, <span>“CrossRef text and data mining services,”</span> <em>Science Editing</em>, vol. 2, no. 1, pp. 22–27, 2015.</div>
+</div>
+<div id="ref-reback2020pandas" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[44] </div><div class="csl-right-inline">T. pandas development team, <em>Pandas-dev/pandas: pandas</em>. (Feb. 2020). Zenodo. doi: <a href="https://doi.org/10.5281/zenodo.3509134">10.5281/zenodo.3509134</a>.</div>
+</div>
+<div id="ref-openai_api" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[45] </div><div class="csl-right-inline">OpenAI, <span>“OpenAI API documentation.”</span> <a href="https://platform.openai.com/docs" class="uri">https://platform.openai.com/docs</a>.</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<div id="footer-bar">
+<p>Aishwarya Girish</p>
+</div>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
