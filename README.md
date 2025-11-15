@@ -49,7 +49,7 @@ Extras                               # Supplementary Project Assets
 
 ## 📎 Requirements
 
-All analyses are performed within an Python framework using Python (version 3.13). Other dependencies and libraries are clearly mentioned in the respective code files.
+All analyses are performed within an Python framework using Python (version 3.13). Other dependencies and libraries are clearly specified in the respective code files.
 
 ## 🦠 How to Run the Analysis
 
@@ -62,7 +62,7 @@ To reproduce the full analysis:
 2. Open the folder of interest in VSCode or equivalent.
 3. Run the code to reproduce results.
 
-## 🦠 Academia Bifurcations: This is not a UMAP, it's a career path 😁
+## 🦠 The Plastisphere: A Vector for Antimicrobial Resistance
 
 ![alt text](https://github.com/Aishwarya-Girish/Joacim-Group-IWR-Internship/blob/main/quarto_files/images/resource_page_illustration.svg)
 
