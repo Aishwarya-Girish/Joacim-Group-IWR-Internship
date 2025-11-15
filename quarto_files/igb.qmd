@@ -1,0 +1,115 @@
+---
+title: "Research visit to the Leibniz Institute of Freshwater Ecology and Inland Fisheries (IGB), Stechlin-Neuglobsow"
+---
+
+![Lake Stechlin, Neuglobsow (21/11/2024)](images/sunset.jpg)
+
+# Background
+
+
+This short project was conducted within the framework of my internship at Leibniz Institute of Freshwater Ecology and Inland Fisheries (IGB), a collaborator in the [EU-Project TULIP](https://tulip-project.eu/). The project addresses a critical gap in our understanding of freshwater plastic pollution by investigating the "plastisphere" — the microbial communities that colonize plastic debris. Specifically, it explores the temporal development of microalgal communities on different plastic polymers in lentic systems, a subject that remains largely unexplored.
+
+My primary motivation for undertaking this internship was to gain firsthand experience in the practical execution of a large-scale ecological study. As a participant in the TULIP project, I sought to observe and understand the wet-lab methodologies and fieldwork protocols that underpin such collaborative research. A key part of my practical work involved processing and analyzing biofilm samples, including those provided by Dr. Jaffer Yousuf, to characterize the composition of the plastisphere. Although the scope was limited, this hands-on experience provided insight into the challenges and precision required in microbial ecology and environmental plastic research.
+
+
+
+# Methods
+
+
+## Prior Experiment Setup
+
+The study utilized four specialized floating structures in each experimental system. Each structure held $45$ replicates of three substrate types: polyethylene terephthalate (PET), low-density polyethylene (LDPE), and glass, which served as a non-plastic control. The glass slides ($75\text{ mm} \text{x} 25\text{ mm}$) were chosen as a standard proxy for mineral surfaces in biofilm research. Both PET and LDPE plastics were sourced from common household items and cut to the exact dimensions of the glass slides. All substrates were attached to the floating devices with binder clips. These structures were secured in the littoral zone (shoreline), keeping the substrates submerged about $10\text{ cm}$ below the surface and positioned to ensure they were not shaded by local plant life.
+
+
+## Reagent Formulations
+
+The following reagents were prepared using DEPC-treated water:
+
++ $2\times$ CTAB-Extraction Buffer (pH 8.0): $2\%$ CTAB (1 g), $1.4\text{ M}$ NaCl (4.09 g), $20\text{ mM}$ $\text{Na}_2\text{EDTA}$ (0.29225 g), and $100\text{ mM}$ Tris-HCl (0.788 g), adjusted to $50\text{ ml}$.
+
++ PEG/NaCl Solution: $1.6\text{ M}$ NaCl (4.7 g) and $30\%$ PEG 6000, adjusted to $50\text{ ml}$. Gentle heating (max. $50^\circ\text{C}$) was used to aid dissolution.
+
++ $10\%$ SDS: $1\text{ g}$ in $10\text{ ml}$.
+
++ $10\%$ N-Lauroylsarcosine: $1\text{ g}$ in $10\text{ ml}$.
+
++ Linear Polyacrylamide (LPA): Used as a neutral carrier (Gen – Elute pro, $56575\text{ Sigma}$).
+
+
+## Metagenomic DNA Extraction
+
+PET, PE and Glass samples from the filter were processed for simultaneous DNA and RNA extraction using a modified CTAB/SDS/Phenol-Chloroform method (Wang et al., 2012; Brossier et al., 2004; Neresessian, 2005). The sample was transferred to a $2\text{ ml}$ screw-cap tube with zirconium beads ($0.1\text{ mm}$, $0.7\text{ mm}$, and $1\text{ mm}$), followed by the addition of a lysis cocktail containing $650\text{ }\mu\text{l}$ of $2\times$ CTAB buffer, $65\text{ }\mu\text{l}$ of $10\%$ SDS, $65\text{ }\mu\text{l}$ of $10\%$ N-Lauroylsarcosine, and $20\text{ }\mu\text{l}$ of $20\text{ mg/ml}$ Proteinase K. The mixture was incubated at $60^\circ\text{C}$ for $1\text{ h}$ without shaking. Mechanical cell disruption was achieved by adding $500\text{ }\mu\text{l}$ of Phenol-Chloroform-Isoamylalcohol ($\text{25}:24:1$) and processing the tubes in a Fast Prep machine ($40\text{ s}$ at $6.0\text{ m/s}$). Phases were separated by centrifugation ($10\text{ min}$ at $14,000\times g$ and $4^\circ\text{C}$), and the aqueous phase was transferred to a new tube. Residual phenol was removed by washing the aqueous phase with $650\text{ }\mu\text{l}$ of Chloroform-Isoamylalcohol ($\text{24}:1$) and centrifuging again ($10\text{ min}$ at $14,000\times g$ and $4^\circ\text{C}$). The final aqueous phase was transferred to a new tube, and nucleic acids were precipitated by adding $2\text{ volumes}$ of PEG/NaCl solution and $2\text{ }\mu\text{l}$ of Linear Polyacrylamide (LPA) carrier, followed by an overnight incubation at $4^\circ\text{C}$. The pellet was collected by centrifugation ($60\text{ min}$ at $17,000\times g$ and $4^\circ\text{C}$), washed with $800\text{ }\mu\text{l}$ of ice-cold $70\%$ ethanol ($10\text{ min}$ at $17,000\times g$ and $4^\circ\text{C}$), air-dried, and eluted in $50\text{ }\mu\text{l}$ of PCR-grade water after incubation ($10\text{ min}$ at $37^\circ\text{C}$ at $400\text{ rpm}$). 
+
+
+# Results
+
+
+The Qubit readings for the metagenomic DNA extracted were as follows:
+
+## QUBIT Readings (ng/ml) - 15th Day
+
+| Sample      | Reading (ng/ml)       |
+|-------------|-----------------------|
+| PET-15-1    | 44                    |
+| PET-15-2    | 39                    |
+| PE-15-1     | 7.8                   |
+| PE-15-2     | 6.8                   |
+| GLASS-15-1  | 39                    |
+| GLASS-15-2  | 24                    |
+| W1-15-1     | 78                    |
+| W1-15-2     | 58                    |
+| W2-15-1     | 59                    |
+| W2-15-2     | 19                    |
+| W3-15-1     | 0.114 / 1.60 / 1.34   |
+| W3-15-2     | 64                    |
+| BLANK-1     | 0.0086 / 0.086        |
+| BLANK-2     | LTB                   |
+
+## QUBIT Readings (ng/ml) - 30th Day
+
+| Sample      | Reading (ng/ml)       |
+|-------------|-----------------------|
+| PET-30-1    | 35                    |
+| PET-30-2    | 60                    |
+| PE-30-1     | 50                    |
+| PE-30-2     | 59                    |
+| GLASS-30-1  | 91                    |
+| GLASS-30-2  | 88                    |
+| W-30-1      | 75                    |
+| W-30-2      | 81                    |
+| W-30-3      | 108                   |
+| BLANK-1     | LTB                   |
+| BLANK-2     | LTB                   |
+
+Note: LTB = Lower than Blank
+
+
+Qubit fluorometry showed a marked increase in DNA yield from Day 15 to Day 30 across all substrates. Early samples displayed low and variable concentrations, particularly in PE and W3 replicates, consistent with limited microbial colonization. By Day 30, DNA concentrations rose substantially, reaching up to $108\text{ng/ml}$, indicating active biofilm development and biomass accumulation. Blank controls remained below detection, confirming that the increase reflected genuine biological growth.
+
+Samples were then sent for metagenomic sequencing to profile the microbial communities.
+
+# Future Work 
+
+Potential future work would involve comprehensive metagenomic analysis to characterize the microbial community composition on different substrates and assess functional potential. This could include identifying key degraders, biofilm-forming taxa, and metabolic pathways involved in plastic colonization and checking for antibiotic resistance genes. 
+
+In addition to metagenomic profiling, flow cytometry could be applied to quantify and sort microbial populations on different substrates, monitor biofilm development, and track horizontal gene transfer (HGT) events using fluorescent reporter constructs.
+
+# My Key Takeaways
+
+My internship at the Leibniz Institute of Freshwater Ecology and Inland Fisheries (IGB) was a formative experience that reshaped both my scientific outlook and my professional goals. It allowed me to observe world-class environmental research in practice.
+
+1. **Learning from Exemplary Scientific Leadership:** Working in Dr. Hans-Peter Grossart’s group was as much an education in leadership and teamwork as it was in aquatic ecology. The group cultivated open dialogue, mutual respect, and uncompromising scientific standards. I saw how an outstanding research team functions and how effective mentorship and a collaborative culture can simultaneously drive innovation, productivity, and personal development.
+
+2. **First-Hand Exposure to Cutting-Edge Infrastructure:** A highlight of my internship was visiting the **LakeLab facility at IGB Neuglobsow**. Standing among its 24 enclosed lake basins (each a controlled mesocosm representing a defined portion of the lake) was fascinating and motivating. LakeLab clearly demonstrates how experimental control and ecological realism can be combined. Observing how large-scale experiments are designed, implemented, and monitored gave me a concrete understanding of how complex environmental processes can be studied systematically. 
+
+3. **Research Embedded in Nature:** The IGB campus, surrounded by Lake Stechlin and the forests, was more than a scenic setting. It was integral to the research itself. The physical closeness between the laboratories and the ecosystems under study created a strong sense of continuity between field observations, experimental work, and theoretical thinking. This proximity reinforced for me that environmental science is not an abstract exercise; it concerns the very systems that we rely on and must protect.
+
+4. **The Power of Interdisciplinary Collaboration:** In a truly interdisciplinary effort, microbiologists, chemists, ecologists, molecular biologists, physicists and data scientists worked together as parts of a single research effort rather than as isolated specialists. Watching these disciplines intersect made it clear that addressing today’s environmental challenges — such as plastic pollution, biodiversity loss, and climate change — requires integrated approaches.
+
+5. **Connecting Micro-Scale Processes to Global Challenges:** Perhaps the most profound insight I gained was understanding how observations at the smallest scales can inform our knowledge of global systems. Studies of microbial communities colonizing a single piece of plastic can reveal patterns in biogeochemical cycling, contaminant fate, and ecosystem functioning. Seeing this conceptual bridge (from single-cell data to ecosystem-level processes) was transformative and humbling. 
+
+From a Systems Biology perspective, I came to recognize that every living organism, however small, contributes to the delicate equilibrium that sustains our planet’s interconnected systems. Life on Earth is a symphony of interactions that together define the health of our environment and,in turn, even human health. This insight deepened my appreciation for interdisciplinary collaboration and strengthened my resolve to pursue research that translates mechanistic understanding into impactful, real-world solutions for environmental sustainability.
+
+# Gallery
+
+![](images/IGB.jpg)

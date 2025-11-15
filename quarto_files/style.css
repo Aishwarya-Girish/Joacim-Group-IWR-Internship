@@ -1,0 +1,160 @@
+/* Justify text */
+p,
+body,
+div,
+span,
+td,
+th {
+  text-align: justify;
+}
+
+/* Common Style for all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #dee2e6;
+  text-align: left;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.75rem;
+}
+h6 {
+  font-size: 0.5rem;
+}
+
+.quarto-title h1 {
+  border: none;
+  font-family: "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 500;
+  font-size: calc(1.5rem + 0.9vw);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+}
+tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+tr.header {
+  background: #2c3e50;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2c3e50;
+}
+
+.nav-link.active .menu-text {
+  color: #1cbb9d;
+}
+
+.quarto-title-block .title {
+  margin: 0;
+  padding: 0;
+}
+
+#TOC {
+  text-align: left;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 0;
+  margin-top: 1.25rem;
+  overflow: hidden;
+  position: fixed;
+  top: 5rem;
+  width: 15%;
+}
+
+#toc-title {
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.25rem 1rem;
+  margin-top: 0;
+}
+
+#quarto-content {
+  padding: 4rem 0rem;
+}
+
+main {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.42857143;
+  font-size: 16px; /* or your preferred size */
+}
+
+#footer-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 25px;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  z-index: 1000;
+}
+
+/* --- Go to Top Button Styling --- */
+#scrollToTopBtn {
+    /* Required for fixed positioning and visibility */
+    display: none;       /* Hidden by default, controlled by JavaScript */
+    position: fixed;     /* Keep it in the same spot while scrolling */
+    bottom: 60px;        /* Positioned above the fixed footer */
+    right: 30px;         /* 30px from the right edge */
+    z-index: 1001;       /* Higher than your footer's z-index (1000) */
+
+    /* Appearance and shape */
+    border: none;
+    outline: none;
+    /* Using your active navbar link color for a pop of emphasis */
+    background-color: #1cbb9d; 
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;  /* Makes it a circle */
+    font-size: 20px;
+    line-height: 1;      /* Ensures the icon is vertically centered */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+    background-color: #159c83; /* Slightly darker shade on hover */
+}
+
+/* Force all table captions to bottom */
+table > caption {
+  caption-side: bottom !important;
+  text-align: left;
+  margin-top: 1em;
+  font-weight: normal;
+}

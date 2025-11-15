@@ -1,0 +1,17 @@
+---
+title: "Acknowledgements"
+---
+
+This work would not have been possible without the collective support, guidance, and inspiration of numerous individuals.
+
+Thank you Dr. Joacim Rocklöv for proving me the supportive research environment and resources through your [wonderful group](https://hei-planet.com/) at the Interdisciplinary Centre for Scientific Computing (IWR), UNiversity of Heidelberg. I extend my sincere thanks to Dr. Marina Treskova for her mentorship, insightful critiques, and steady guidance, which greatly enhanced the quality and focus of this work.
+
+I am grateful to Dr. Hans-Peter Grossart for the invaluable opportunity to conduct research at the Leibniz Institute of Freshwater Ecology and Inland Fisheries (IGB). This experience was enriched by Dr. Nafi´u Abdulkadir, whose invitation and support facilitated a fruitful collaboration. I extended my warm gratitude to Sai Hariharan, Kushi, and Dr. Jaffer Yousouf Dar for their collegiality, knowledge sharing, and for providing samples for a smallparallel project. The time spent at IGB was not only highly educational but also truly memorable.
+
+**Last, but certainly not the least, I reserve a special and heartfelt acknowledgment to Luise Nottmeyer. Her role extended far beyond timely mentorship. The countless brainstorming sessions and open, scientific discussions were instrumental in shaping the project's trajectory and methodological rigor. Her cheerful spirit, wonderfully positive attitude, and great companionship made this internship a genuine pleasure!**
+
+Author Details:
+
++ Name: Aishwarya Girish
++ Email: aishwarya.girish@stud.uni-heidelberg.de
++ LinkedIn: https://www.linkedin.com/in/aishwaryagirish/

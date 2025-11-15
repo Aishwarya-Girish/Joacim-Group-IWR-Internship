@@ -1,0 +1,10 @@
+---
+title: "Resources"
+---
+
+
+The processed data and analysis scripts are available on [GitHub](https://github.com/Aishwarya-Girish/Joacim-Group-IWR-Internship).
+
+![](images/resource_page_illustration.svg){width=93%}
+
+

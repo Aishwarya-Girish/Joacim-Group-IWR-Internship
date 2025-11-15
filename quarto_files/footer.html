@@ -1,0 +1,33 @@
+<div id="footer-bar">
+  <span>© 2025 Aishwarya Girish</span>
+  <div>
+    <label for="theme-select">Switch Theme:</label>
+    <select id="theme-select">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const select = document.getElementById("theme-select");
+  const body = document.body;
+
+  // detect current theme
+  if (body.getAttribute("data-bs-theme") === "dark") {
+    select.value = "dark";
+  } else {
+    select.value = "light";
+  }
+
+  // change theme on select
+  select.addEventListener("change", function () {
+    if (select.value === "dark") {
+      body.setAttribute("data-bs-theme", "dark");
+    } else {
+      body.setAttribute("data-bs-theme", "light");
+    }
+  });
+});
+</script>

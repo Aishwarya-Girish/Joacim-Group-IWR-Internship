@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: website_docs
+  preview:
+    watch-inputs: true
+
+bibliography: my-bib.bib
+csl: ieee.csl
+
+website:
+  title: "Internship Report"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Report
+      - href: igb.qmd
+        text: On-Site Visit
+      - href: resources.qmd
+        text: Resources
+      - href: future_research.qmd
+        text: Future Research
+      - href: acknowledgements.qmd
+        text: Acknowledgements
+
+  page-footer:
+    center: |
+      <div id="footer-bar">
+        Aishwarya Girish
+      </div>
+
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+    toc-location: left
+    toc-title: "Contents"
+    number-sections: true
+    code-fold: true
+    code-fold-default: true
+    code-copy: true
+    css: style.css
+    reference-section-title: "References"
+    suppress-bibliography-header: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          <script src="scroll-to-top.js"></script>
+
+
